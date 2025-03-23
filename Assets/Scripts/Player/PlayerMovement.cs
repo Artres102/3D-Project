@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class THEPlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 5f;
     private Rigidbody rb;
     
-    [SerializeField] private Transform atachcamera;
+    [SerializeField] private Transform attachedCamera;
 
     private float horizontalInput;
     private float verticalInput;
@@ -32,13 +32,13 @@ public class THEPlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        float yaw = atachcamera.eulerAngles.y;
+        float yaw = attachedCamera.eulerAngles.y;
         Vector3 camForward = Quaternion.Euler(0, yaw, 0) * Vector3.forward;
         Vector3 camRight = Quaternion.Euler(0, yaw, 0) * Vector3.right;
 
         moveDirection = (camForward * verticalInput + camRight * horizontalInput).normalized;
 
-        rb.MovePosition(rb.position + moveDirection * movementSpeed * Time.fixedDeltaTime);
+        rb.velocity = new Vector3(moveDirection.x * movementSpeed, rb.velocity.y, moveDirection.z * movementSpeed);
     }
 
     void FixedUpdate()
