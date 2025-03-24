@@ -14,7 +14,7 @@ public class ThirdPersonCamera : MonoBehaviour
     private Vector3 rotate;
 
     // Position related variables
-    [SerializeField] private Transform cameraPosition;
+    [SerializeField] private Transform cameraPositionTransform;
 
     // Collision related variables
     public LayerMask collideAgainst = 1; // Layers to collide with
@@ -25,7 +25,7 @@ public class ThirdPersonCamera : MonoBehaviour
     {
         target = GameObject.FindWithTag("Player");
         cameraTransform = GameObject.FindWithTag("MainCamera").GetComponent<Transform>();
-        cameraPosition = transform.GetChild(0);
+        cameraPositionTransform = transform.GetChild(0);
 
         if (target != null && cameraTransform != null)
         {
@@ -50,16 +50,16 @@ public class ThirdPersonCamera : MonoBehaviour
     void MoveCamera()
     {
         Vector3 targetPosition = target.transform.position;
-        Vector3 cameraPositionValue = cameraPosition.position;
+        Vector3 cameraPosition = cameraPositionTransform.position;
 
-        Vector3 directionToTarget = (targetPosition - cameraPositionValue).normalized;
-        float distanceToTarget = Vector3.Distance(cameraPositionValue, targetPosition);
+        Vector3 directionToTarget = (targetPosition - cameraPosition).normalized;
+        float distanceToTarget = Vector3.Distance(cameraPosition, targetPosition);
 
         // Check if the camera is too close to the target
         if (distanceToTarget < minimumDistanceFromTarget)
         {
             // Pull the camera back to maintain minimum distance
-            cameraPositionValue = targetPosition - directionToTarget * minimumDistanceFromTarget;
+            cameraPosition = targetPosition - directionToTarget * minimumDistanceFromTarget;
         }
         else
         {
@@ -68,12 +68,16 @@ public class ThirdPersonCamera : MonoBehaviour
             if (Physics.SphereCast(targetPosition, cameraRadius, -directionToTarget, out hit, distanceToTarget, collideAgainst))
             {
                 // If an obstacle is hit, pull the camera forward
-                cameraPositionValue = hit.point + directionToTarget * cameraRadius; // Adjust position to be in front of the obstacle
+                Vector3 newCameraPosition = hit.point + directionToTarget * cameraRadius; // Adjust position to be in front of the obstacle
+            
+                // Maintain or increase the Y position
+                newCameraPosition.y = Mathf.Max(newCameraPosition.y, cameraPosition.y);
+                cameraPosition = newCameraPosition;
             }
         }
 
         // Update the camera's position and rotation
-        cameraTransform.position = cameraPositionValue;
+        cameraTransform.position = cameraPosition;
         cameraTransform.LookAt(targetPosition); // Always look at the target
     }
 }
