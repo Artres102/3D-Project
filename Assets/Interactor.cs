@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 { 
+    public float distance;
     void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name);
@@ -12,7 +13,8 @@ public class Interactor : MonoBehaviour
         if (interactable != null)
         {
             GameObject interactText = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
-            interactText.SetActive(false);
+            Debug.Log(interactText);
+            interactText.SetActive(true);
         }
     }
 
@@ -26,11 +28,12 @@ public class Interactor : MonoBehaviour
             GameObject interactText = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
             interactText.SetActive(false);
         }
+        
+        Debug.Log(distance);
     }
 
     void OnTriggerStay(Collider other)
     {
-        Debug.Log(other.name + "Still here");
         var interactable = other.GetComponent<IInteractable>();
 
         if (interactable != null)
@@ -38,7 +41,6 @@ public class Interactor : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 interactable.Interact(this);
-                Debug.Log("I WORK LMAO");
             }
         }
     }

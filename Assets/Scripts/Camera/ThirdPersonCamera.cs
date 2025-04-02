@@ -39,6 +39,7 @@ public class ThirdPersonCamera : MonoBehaviour
 
     void Update()
     {
+        transform.position = target.transform.position;
         yRotation = Input.GetAxis("Mouse X");
         rotate = new Vector3(0, yRotation, 0) * sensitivity * Time.deltaTime;
 
