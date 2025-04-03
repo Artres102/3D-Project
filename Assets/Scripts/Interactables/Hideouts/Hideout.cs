@@ -64,7 +64,7 @@ public class InteractableHideout : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor iInteractor)
     {
-        
+        return false;
     }
 
 }

@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float movementSpeed = 5f;
    //[SerializeField] private float rotationSpeed = 5f;
     private Rigidbody rb;
+    private CharacterController parentController;
     
     [SerializeField] private Transform attachedCamera;
 
@@ -31,47 +32,42 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");     
     }
 
-   /* private void Move()
+    private void Move()
     {
-        float yaw = attachedCamera.eulerAngles.y;
-        Vector3 camForward = Quaternion.Euler(0, yaw, 0) * Vector3.forward;
-        Vector3 camRight = Quaternion.Euler(0, yaw, 0) * Vector3.right;
+        // Get the forward and right vectors of the camera
+        Vector3 camForward = attachedCamera.forward;
+        camForward.y = 0; // Ignore vertical component
+        camForward.Normalize();
+
+        Vector3 camRight = attachedCamera.right;
+        camRight.y = 0; // Ignore vertical component
+        camRight.Normalize();
+
+        // Calculate the movement direction based on input
+        Vector3 movementDirection = (camForward * verticalInput + camRight * horizontalInput).normalized;
+
+        // Check if there is significant movement input
+        if (movementDirection.magnitude > 0.1f) 
+        {
+            // Set the velocity based on the movement direction and speed
+            rb.velocity = new Vector3(movementDirection.x * movementSpeed, rb.velocity.y, movementDirection.z * movementSpeed);
         
-        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+            // Calculate the target rotation based on the movement direction
+            Quaternion targetRotation = Quaternion.LookRotation(movementDirection);
 
-        //moveDirection = (camForward * verticalInput + camRight * horizontalInput).normalized;
+            // Preserve the current X rotation while updating the Y rotation
+            Vector3 currentRotation = transform.rotation.eulerAngles;
+            targetRotation = Quaternion.Euler(currentRotation.x, targetRotation.eulerAngles.y, currentRotation.z);
 
-        rb.velocity = new Vector3(moveDirection.x * movementSpeed, rb.velocity.y, moveDirection.z * movementSpeed);
-    } */
-   private void Move()
-   {
-       Vector3 camForward = attachedCamera.forward;
-       camForward.y = 0;
-       camForward.Normalize();
-
-       Vector3 camRight = attachedCamera.right;
-       camRight.y = 0;
-       camRight.Normalize();
-       
-       Vector3 movementDirection = (camForward * verticalInput + camRight * horizontalInput).normalized;
-
-       if (movementDirection.magnitude > 0.1f) 
-       {
-           rb.velocity = new Vector3(movementDirection.x * movementSpeed, rb.velocity.y, movementDirection.z * movementSpeed);
-           
-           if (verticalInput > 0)  // Only rotate if moving forward
-           {
-               Quaternion targetRotation = Quaternion.LookRotation(movementDirection);
-            
-               //Smooth rotation 
-               //transform.parent.rotation = Quaternion.Slerp(transform.parent.rotation, targetRotation, Time.deltaTime * 5f);
-           }
-       }
-       else
-       {
-           rb.velocity = new Vector3(0, rb.velocity.y, 0);
-       }
-   }
+            // Smooth rotation of the player object itself
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
+        }
+        else
+        {
+            // Stop horizontal movement while maintaining vertical velocity
+            rb.velocity = new Vector3(0, rb.velocity.y, 0);
+        }
+    }
 
     void FixedUpdate()
     {
