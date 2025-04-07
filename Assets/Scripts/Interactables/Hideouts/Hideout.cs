@@ -1,70 +1,61 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractableHideout : MonoBehaviour, IInteractable
 {
-    private bool isPlayerInside = false;
-    private bool isInsideHideout = false; 
-    private PlayerMovement playerMovement;
-    
-    private MeshRenderer playerRenderer;
+    private bool isInsideHideout = false;
+    private int originalLayer = -1; 
 
-    void OnTriggerEnter(Collider other)
+    public bool Interact(Interactor interactor)
     {
-        if (other.CompareTag("Player")) 
+        GameObject player = GameObject.FindWithTag("Player");
+
+        if (player == null)
         {
-            isPlayerInside = true;
-            Debug.Log("Player inside true");
-
-            playerMovement = other.GetComponent<PlayerMovement>(); 
-            playerRenderer = other.GetComponent<MeshRenderer>(); 
-
-            if (playerRenderer == null) 
-            {
-                playerRenderer = other.GetComponentInChildren<MeshRenderer>(); //trocar se deixar de ser child
-            }
+            Debug.LogError("Player not found!");
+            return false;
         }
-    }
 
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player")) 
+        // Original layer change
+        if (originalLayer == -1)
         {
-            isPlayerInside = false;
+            originalLayer = player.layer;
         }
-    }
 
-    void Update()
-    {
-        if (isPlayerInside && Input.GetKeyDown(KeyCode.E)) 
+        // Get movement and renderer components
+        PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+        MeshRenderer playerRenderer = player.GetComponentInChildren<MeshRenderer>();
+
+        if (playerMovement == null || playerRenderer == null)
         {
-            ToggleHideout();
+            Debug.LogError("Missing PlayerMovement or MeshRenderer.");
+            return false;
         }
-    }
 
-    private void ToggleHideout()
-    {
-        if (playerMovement != null) 
+        // Toggle 
+        isInsideHideout = !isInsideHideout;
+
+        // Enable/disable movement and visibility
+        playerMovement.enabled = !isInsideHideout;
+        playerRenderer.enabled = !isInsideHideout;
+
+        // Change layer to ignore raycast while hidden
+        if (isInsideHideout)
         {
-            isInsideHideout = !isInsideHideout; 
-
-            if (isInsideHideout)
-            {
-                playerMovement.enabled = false; //np movement
-                if (playerRenderer != null) playerRenderer.enabled = false; //player hides
-            }
-            else
-            {
-                playerMovement.enabled = true; //movement
-                if (playerRenderer != null) playerRenderer.enabled = true; //player shwos up
-            }
+            player.layer = LayerMask.NameToLayer("Ignore Raycast");
         }
-    }
+        else
+        {
+            player.layer = originalLayer;
+        }
 
-    public bool Interact(Interactor iInteractor)
-    {
-        return false;
-    }
+        // Hide UI
+        GameObject canvas = GameObject.Find("Canvas");
+        if (canvas != null && canvas.transform.childCount > 0)
+        {
+            GameObject interactText = canvas.transform.GetChild(0).gameObject;
+            interactText.SetActive(false);
+        }
 
+        return true;
+    }
 }
