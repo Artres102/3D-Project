@@ -34,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        // Get the forward and right vectors of the camera
         Vector3 camForward = attachedCamera.forward;
         camForward.y = 0; // Ignore vertical component
         camForward.Normalize();
@@ -49,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
         // Check if there is significant movement input
         if (movementDirection.magnitude > 0.1f) 
         {
-            // Set the velocity based on the movement direction and speed
             rb.velocity = new Vector3(movementDirection.x * movementSpeed, rb.velocity.y, movementDirection.z * movementSpeed);
         
             // Calculate the target rotation based on the movement direction
@@ -59,12 +57,11 @@ public class PlayerMovement : MonoBehaviour
             Vector3 currentRotation = transform.rotation.eulerAngles;
             targetRotation = Quaternion.Euler(currentRotation.x, targetRotation.eulerAngles.y, currentRotation.z);
 
-            // Smooth rotation of the player object itself
+            // Smooth rotation of the player object
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
         }
         else
         {
-            // Stop horizontal movement while maintaining vertical velocity
             rb.velocity = new Vector3(0, rb.velocity.y, 0);
         }
     }

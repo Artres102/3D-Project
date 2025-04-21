@@ -6,8 +6,10 @@ using UnityEngine;
 public class InventoryScript : MonoBehaviour
 {
     public List<Item> items;
+    
+    public int[] item = new int[4];
 
-    public float maxWeight = 100f;
+    public float maxWeight = 10f;
     
     // Might remove variable in the future, being replaced by a foreach loop in the items Interact function
     public float currentWeight = 0f;

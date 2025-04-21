@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
-  maxWeight: 100
+  maxWeight: 10
   currentWeight: 0
 --- !u!1 &4767602227645829176
 GameObject:
@@ -308,8 +308,8 @@ Transform:
   m_GameObject: {fileID: 6497072212258109603}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.7801002, z: -0.035000205}
-  m_LocalScale: {x: 2.1063337, y: 0.700521, z: 1.6121997}
+  m_LocalPosition: {x: 0, y: 1.7801, z: 0.0503}
+  m_LocalScale: {x: 2.1063337, y: 0.8711537, z: 1.6121997}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 805688404456723663}

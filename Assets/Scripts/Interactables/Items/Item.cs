@@ -5,9 +5,11 @@ using UnityEngine.EventSystems;
 
 public class Item : MonoBehaviour, IInteractable
 {
-    [SerializeField] private string itemName;
+    public string itemName;
 
     public float itemWeight;
+
+    public int itemId;
     
     public bool Interact(Interactor interactor)
     { 

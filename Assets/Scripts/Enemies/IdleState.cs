@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 public class IdleState : AStateBehaviour
 {
+    private EnemyFoV fov;
 
     [SerializeField] private float idleDuration = 2f;
     private float idleTimer = 0f;
@@ -17,6 +19,8 @@ public class IdleState : AStateBehaviour
     public override void OnStateStart()
     {
         Debug.Log("IDLE");
+        
+        fov = gameObject.GetComponent<EnemyFoV>();
     }
 
     public override void OnStateUpdate()
@@ -24,9 +28,8 @@ public class IdleState : AStateBehaviour
         idleTimer += Time.deltaTime;
         if (idleTimer >= idleDuration)
         {
-            AssociatedStateMachine.SetState((int)EOtterState.Wandering); // Transition back to Patroling
+            AssociatedStateMachine.SetState((int)EnemyState.Wandering); // Transition back to Wandering
         }
-        // fov.suspicionLevel = lowerSuspicion(fov.suspicionLevel);
     }
 
     public override void OnStateEnd()
@@ -35,14 +38,10 @@ public class IdleState : AStateBehaviour
 
     public override int StateTransitionCondition()
     {
-        // if (fov.FindPlayerTarget() != (int)EOtterState.Invalid)
-        // {
-        //     return fov.FindPlayerTarget(); 
-        // }
-        // else if (detection.detected)
-        // {
-        //     return (int)EOtterState.Alarmed;
-        // }
-        return (int)EOtterState.Invalid;
+        if (fov.FindPlayerTarget() != (int)EnemyState.Invalid)
+        {
+            return fov.FindPlayerTarget(); 
+        }
+        return (int)EnemyState.Invalid;
     }
 }
