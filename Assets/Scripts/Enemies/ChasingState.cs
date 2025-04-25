@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -15,30 +12,36 @@ public class ChasingState : AStateBehaviour
     private StandUp StandUp;
     private EnemyCollision collision;
 
+    [SerializeField] private float chaseSpeed = 10f; //speed of the animal while chasing
 
-    public override bool InitializeState()
-    {
-        return true;
-    }
+    public override bool InitializeState() => true;
 
     public override void OnStateStart()
     {
         Debug.Log("CHASING");
+
         fov = GetComponent<EnemyFoV>();
         agent = GetComponent<NavMeshAgent>();
         StandUp = GameObject.FindWithTag("Player").GetComponent<StandUp>();
         collision = GetComponent<EnemyCollision>();
+
+        if (agent != null)
+        {
+            agent.speed = chaseSpeed;
+        }
     }
 
     public override void OnStateUpdate()
     {
-
-        // fov.suspicionLevel = lowerSuspicion(fov.suspicionLevel);
+        // Nothing here right now
     }
 
     public override void OnStateFixedUpdate()
     {
-        agent.SetDestination(Player.position);
+        if (Player != null)
+        {
+            agent.SetDestination(Player.position);
+        }
     }
 
     public override void OnStateEnd()
@@ -53,7 +56,6 @@ public class ChasingState : AStateBehaviour
         Debug.Log("closest = " + destination.transform.position);
         agent.SetDestination(destination.transform.position);
         StartCoroutine(CheckDestination(destination));
-        return;
     }
 
     public override int StateTransitionCondition()
@@ -76,7 +78,7 @@ public class ChasingState : AStateBehaviour
         return (int)EnemyState.Invalid;
     }
 
-    GameObject FindClosestWaypoint()
+    private GameObject FindClosestWaypoint()
     {
         float minDist = Mathf.Infinity;
         GameObject closest = wpManager.waypoints[0];
