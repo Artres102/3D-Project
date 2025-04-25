@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -6,13 +6,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ChasingState : AStateBehaviour
+public class RunningState : AStateBehaviour
 {
     public WPManager wpManager;
     private EnemyFoV fov;
     public Transform Player;
     private NavMeshAgent agent;
-    private bool StandingUp;
+    public float runAwayDistance = 5f;
     
 
     public override bool InitializeState()
@@ -22,10 +22,9 @@ public class ChasingState : AStateBehaviour
 
     public override void OnStateStart()
     {
-        Debug.Log("CHASING");
+        Debug.Log("Running");
         fov = GetComponent<EnemyFoV>();
         agent = GetComponent<NavMeshAgent>();
-        StandingUp = GameObject.FindGameObjectWithTag("Player").GetComponent<StandUp>().Standingup;
     }
 
     public override void OnStateUpdate()
@@ -36,8 +35,11 @@ public class ChasingState : AStateBehaviour
 
     public override void OnStateFixedUpdate()
     {
-        agent.SetDestination(Player.position);
+        Vector3 directionAwayFromPlayer = (agent.transform.position - Player.position).normalized;
+        Vector3 destination = agent.transform.position + directionAwayFromPlayer * runAwayDistance;
+        agent.SetDestination(destination);
     }
+
 
     public override void OnStateEnd()
     {

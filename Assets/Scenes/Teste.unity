@@ -122,11 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &201027577 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 805688404456723663, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
-  m_PrefabInstance: {fileID: 944698414}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &656159393
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +249,7 @@ GameObject:
   - component: {fileID: 838463909}
   - component: {fileID: 838463908}
   - component: {fileID: 838463907}
+  - component: {fileID: 838463913}
   - component: {fileID: 838463906}
   - component: {fileID: 838463911}
   - component: {fileID: 838463912}
@@ -380,10 +376,7 @@ MonoBehaviour:
   wpManager: {fileID: 2072485751}
   currentWaypoint: {fileID: 730458140}
   moveSpeed: 50
-  waypoints:
-  - {fileID: 730458141}
-  - {fileID: 2022839797}
-  - {fileID: 1095039861}
+  waypoints: []
 --- !u!114 &838463907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,8 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wpManager: {fileID: 2072485751}
-  enemy: {fileID: 838463912}
-  Player: {fileID: 201027577}
+  Player: {fileID: 1504346001}
 --- !u!114 &838463910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +489,21 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &838463913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838463899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca05b80cb2d90341b1983002460a073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wpManager: {fileID: 2072485751}
+  Player: {fileID: 1504346001}
+  runAwayDistance: 5
 --- !u!1 &854914564
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,10 +658,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7720321265781458341, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
+      propertyPath: attachedCamera
+      value: 
+      objectReference: {fileID: 1062691567}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2786064463610432320, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1504346008}
   m_SourcePrefab: {fileID: 100100000, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
 --- !u!1 &1011039708
 GameObject:
@@ -1082,6 +1096,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1504346000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2786064463610432320, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
+  m_PrefabInstance: {fileID: 944698414}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1504346001 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3242295270749474782, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
+  m_PrefabInstance: {fileID: 944698414}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1504346008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504346000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ad736ef1f32934da8b88ed00b0a849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1944115858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,7 +1385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb914e7682c8e8c428306b52a369e408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 0
+  horizontalSensitivity: 0
+  verticalSensitivity: 0
   cameraPositionTransform: {fileID: 0}
   collideAgainst:
     serializedVersion: 2
