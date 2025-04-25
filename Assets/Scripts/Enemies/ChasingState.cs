@@ -33,7 +33,6 @@ public class ChasingState : AStateBehaviour
     public override void OnStateUpdate()
     {
 
-        // fov.suspicionLevel = lowerSuspicion(fov.suspicionLevel);
     }
 
     public override void OnStateFixedUpdate()
@@ -45,7 +44,6 @@ public class ChasingState : AStateBehaviour
     {
         if (StateTransitionCondition() == (int)EnemyState.Attacking)
         {
-            Debug.Log("I skipped everything lmao");
             return;
         }
 
