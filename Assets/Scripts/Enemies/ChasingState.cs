@@ -48,7 +48,6 @@ public class ChasingState : AStateBehaviour
     {
         if (StateTransitionCondition() == (int)EnemyState.Attacking)
         {
-            Debug.Log("I skipped everything lmao");
             return;
         }
 
