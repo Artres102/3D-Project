@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -40,6 +42,7 @@ public class ChasingState : AStateBehaviour
         GameObject destination = FindClosestWaypoint();
         Debug.Log("closest = " + destination.transform.position);
         agent.SetDestination(destination.transform.position);
+        StartCoroutine(CheckDestination(destination));
         return; 
     }
     
@@ -67,5 +70,11 @@ public class ChasingState : AStateBehaviour
         }
 
         return closest;
+    }
+
+    private IEnumerator CheckDestination(GameObject destination)
+    {
+        yield return new WaitUntil(() => Vector3.Distance(transform.position, destination.transform.position) < 0.2f);
+        agent.ResetPath();
     }
 }

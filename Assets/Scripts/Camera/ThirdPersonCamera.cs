@@ -20,7 +20,7 @@ public class ThirdPersonCamera : MonoBehaviour
 
     // Collision related variables
     public LayerMask collideAgainst = 1; // Layers to collide with
-    public float minimumDistanceFromTarget = 0.1f; // Minimum distance from the target
+    public float minimumDistanceFromTarget = 0.1f;
     public float cameraRadius = 0.1f; // Radius of the camera for collision detection
 
     void Start()

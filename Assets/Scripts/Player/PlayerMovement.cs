@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float movementSpeed = 5f;
    //[SerializeField] private float rotationSpeed = 5f;
     private Rigidbody rb;
-    private CharacterController parentController;
     
     [SerializeField] private Transform attachedCamera;
 
