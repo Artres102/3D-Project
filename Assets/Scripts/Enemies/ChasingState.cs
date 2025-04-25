@@ -12,9 +12,9 @@ public class ChasingState : AStateBehaviour
     private EnemyFoV fov;
     public Transform Player;
     private NavMeshAgent agent;
-    private bool StandingUp;
-    private bool Attack;
-    
+    private StandUp StandUp;
+    private EnemyCollision collision;
+
 
     public override bool InitializeState()
     {
@@ -26,13 +26,13 @@ public class ChasingState : AStateBehaviour
         Debug.Log("CHASING");
         fov = GetComponent<EnemyFoV>();
         agent = GetComponent<NavMeshAgent>();
-        StandingUp = GameObject.FindGameObjectWithTag("Player").GetComponent<StandUp>().Standingup;
-        Attack = GetComponent<EnemyCollision>().attacking;
+        StandUp = GameObject.FindWithTag("Player").GetComponent<StandUp>();
+        collision = GetComponent<EnemyCollision>();
     }
 
     public override void OnStateUpdate()
     {
-            
+
         // fov.suspicionLevel = lowerSuspicion(fov.suspicionLevel);
     }
 
@@ -43,31 +43,39 @@ public class ChasingState : AStateBehaviour
 
     public override void OnStateEnd()
     {
+        if (StateTransitionCondition() == (int)EnemyState.Attacking)
+        {
+            Debug.Log("I skipped everything lmao");
+            return;
+        }
+
         GameObject destination = FindClosestWaypoint();
         Debug.Log("closest = " + destination.transform.position);
         agent.SetDestination(destination.transform.position);
         StartCoroutine(CheckDestination(destination));
-        return; 
+        return;
     }
-    
+
     public override int StateTransitionCondition()
     {
+        if (collision.attacking)
+        {
+            return (int)EnemyState.Attacking;
+        }
+
         if (fov.FindPlayerTarget() != (int)EnemyState.Invalid)
         {
-            return fov.FindPlayerTarget();   
+            return fov.FindPlayerTarget();
         }
-        else if (StandingUp)
+
+        if (StandUp.Standingup)
         {
             return (int)EnemyState.Running;
         }
 
-        if (Attack)
-        {
-            return (int)EnemyState.Attacking;
-        }
         return (int)EnemyState.Invalid;
-        
     }
+
     GameObject FindClosestWaypoint()
     {
         float minDist = Mathf.Infinity;

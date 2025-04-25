@@ -14,7 +14,7 @@ public class AttackState : AStateBehaviour
     public override void OnStateStart()
     {
         Debug.Log("ATACKED");
-        StartCoroutine(WaitAndLoadScene(2f));
+        StartCoroutine(WaitAndLoadScene(1f));
     }
 
     public override void OnStateUpdate()
@@ -39,6 +39,5 @@ public class AttackState : AStateBehaviour
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(1);
-        Time.timeScale = 1;
     }
 }

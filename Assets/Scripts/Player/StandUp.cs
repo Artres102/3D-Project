@@ -23,6 +23,7 @@ public class StandUp : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
+            Debug.Log("Standingup");
             Standingup = IsStandingUp();
         }
 
