@@ -1,10 +1,8 @@
+﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class StandUp : MonoBehaviour
 {
-
     public bool Standingup = false;
     private PlayerMovement playerMovement;
 
