@@ -6,6 +6,7 @@ public abstract class AStateBehaviour : MonoBehaviour
     public abstract bool InitializeState();
     public abstract void OnStateStart();
     public abstract void OnStateUpdate();
+    public abstract void OnStateFixedUpdate();
     public abstract void OnStateEnd();
     public abstract int StateTransitionCondition();
 }

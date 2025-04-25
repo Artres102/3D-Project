@@ -9,21 +9,26 @@ public class EnemyRoamer : MonoBehaviour
     public float moveSpeed = 2f;
     private List<Node> path;
     private int pathIndex = 0;
-
+    private Rigidbody rb;
     private float switchCooldown = 1f; // wait between reaching nodes and getting a new path
 
     void Start()
     {
         PickRandomDestination();
+        
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (path == null || pathIndex >= path.Count) return;
 
         GameObject target = path[pathIndex].GetID();
         Vector3 dir = (target.transform.position - transform.position).normalized;
-        transform.position += dir * moveSpeed * Time.deltaTime;
+        
+        Vector3 velocity = (dir * moveSpeed * Time.deltaTime);
+        rb.velocity = new Vector3(velocity.x, rb.velocity.y, velocity.z);
+        //transform.position += dir * moveSpeed * Time.deltaTime;
 
         if (Vector3.Distance(transform.position, target.transform.position) < 0.2f)
         {

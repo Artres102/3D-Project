@@ -4,9 +4,20 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
+using System.Collections.Generic;
 
 public class WanderingState : AStateBehaviour
 {
+    
+    public WPManager wpManager;
+    public GameObject currentWaypoint;
+    public float moveSpeed = 2f;
+    private List<Node> path;
+    private int pathIndex = 0;
+    private Rigidbody rb;
+    private float switchCooldown = 1f; // wait between reaching nodes and getting a new path
+    
+    
     [SerializeField] private Transform[] waypoints;
 
     private EnemyFoV fov;
@@ -17,6 +28,8 @@ public class WanderingState : AStateBehaviour
         {
             return true;
         }
+        
+        
 
         return true;
     }
@@ -26,13 +39,38 @@ public class WanderingState : AStateBehaviour
         Debug.Log("WANDERING");
         fov = GetComponent<EnemyFoV>();
         SetNextWaypoint();
+        
+        PickRandomDestination();
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     public override void OnStateUpdate()
     {
             SetNextWaypoint();
             
-            // fov.suspicionLevel = lowerSuspicion(fov.suspicionLevel);
+    }
+
+    public override void OnStateFixedUpdate()
+    {
+        if (path == null || pathIndex >= path.Count) return;
+
+        GameObject target = path[pathIndex].GetID();
+        Debug.Log("Distance = " + Vector3.Distance(transform.position, target.transform.position));
+        if (Vector3.Distance(transform.position, target.transform.position) < 0.2f)
+        {
+            pathIndex++;
+            if (pathIndex >= path.Count)
+            {
+                Invoke(nameof(PickRandomDestination), switchCooldown); 
+            }
+        }
+        Vector3 dir = (target.transform.position - transform.position).normalized;
+        
+        Vector3 velocity = (dir * moveSpeed * Time.deltaTime);
+        rb.velocity = new Vector3(velocity.x, rb.velocity.y, velocity.z);
+        //transform.position += dir * moveSpeed * Time.deltaTime;
+        
+        
     }
 
     public override void OnStateEnd()
@@ -56,6 +94,52 @@ public class WanderingState : AStateBehaviour
             int randomIndex = Random.Range(0, waypoints.Length);
         }
     }
+    
+    
+    void PickRandomDestination()
+    {
+        if (wpManager == null || wpManager.graph == null || wpManager.waypoints.Length == 0)
+            return;
+
+        GameObject destination;
+        do
+        {
+            destination = wpManager.waypoints[Random.Range(0, wpManager.waypoints.Length)];
+            Debug.Log("dest = " + destination.transform.position);
+        } while (destination == currentWaypoint); // avoid picking the same one
+
+        //currentWaypoint = destination;
+
+        // find closest node 
+        GameObject nearest = FindClosestWaypoint();
+        if (wpManager.graph.AStar(currentWaypoint, destination))
+        {
+            Debug.Log("A STAR");
+            path = wpManager.graph.pathList;
+            Debug.Log("path = " + path.Count);
+            pathIndex = 0;
+        }
+        currentWaypoint = destination;
+    }
+
+    GameObject FindClosestWaypoint()
+    {
+        float minDist = Mathf.Infinity;
+        GameObject closest = wpManager.waypoints[0];
+
+        foreach (var wp in wpManager.waypoints)
+        {
+            float dist = Vector3.Distance(transform.position, wp.transform.position);
+            if (dist < minDist)
+            {
+                minDist = dist;
+                closest = wp;
+            }
+        }
+
+        return closest;
+    }
+    
     
     // private float lowerSuspicion(float suspicion)
     // {

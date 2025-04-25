@@ -62,6 +62,11 @@ public class StateMachine : MonoBehaviour
         }
     }
 
+    void FixedUpdate()
+    {
+        currentState.OnStateFixedUpdate();
+    }
+
     public bool IsCurrentState(AStateBehaviour stateBehaviour)
     {
         return currentState == stateBehaviour;

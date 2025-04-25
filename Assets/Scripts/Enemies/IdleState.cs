@@ -32,6 +32,11 @@ public class IdleState : AStateBehaviour
         }
     }
 
+    public override void OnStateFixedUpdate()
+    {
+        
+    }
+
     public override void OnStateEnd()
     {
     }
