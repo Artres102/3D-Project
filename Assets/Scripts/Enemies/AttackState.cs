@@ -1,18 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class AttackState : MonoBehaviour
+public class AttackState : AStateBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public override bool InitializeState()
     {
-        
+        return true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnStateStart()
     {
-        
+        Debug.Log("ATACKED");
+        StartCoroutine(WaitAndLoadScene(2f));
+    }
+
+    public override void OnStateUpdate()
+    {
+        // Handle alarm behavior
+    }
+    public override void OnStateFixedUpdate()
+    {
+      
+    }
+    public override void OnStateEnd()
+    {
+        // Cleanup if necessary
+    }
+
+    public override int StateTransitionCondition()
+    { 
+        return (int)EnemyState.Invalid;// Default: no transition
+    }
+    
+    private IEnumerator WaitAndLoadScene(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 }

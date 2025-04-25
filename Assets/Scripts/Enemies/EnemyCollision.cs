@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
 {
+    public bool attacking = false;
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            attacking = true;
+        }
+    }
+    
     // Start is called before the first frame update
     void Start()
     {

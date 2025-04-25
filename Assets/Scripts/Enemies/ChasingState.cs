@@ -13,6 +13,7 @@ public class ChasingState : AStateBehaviour
     public Transform Player;
     private NavMeshAgent agent;
     private bool StandingUp;
+    private bool Attack;
     
 
     public override bool InitializeState()
@@ -26,6 +27,7 @@ public class ChasingState : AStateBehaviour
         fov = GetComponent<EnemyFoV>();
         agent = GetComponent<NavMeshAgent>();
         StandingUp = GameObject.FindGameObjectWithTag("Player").GetComponent<StandUp>().Standingup;
+        Attack = GetComponent<EnemyCollision>().attacking;
     }
 
     public override void OnStateUpdate()
@@ -57,6 +59,11 @@ public class ChasingState : AStateBehaviour
         else if (StandingUp)
         {
             return (int)EnemyState.Running;
+        }
+
+        if (Attack)
+        {
+            return (int)EnemyState.Attacking;
         }
         return (int)EnemyState.Invalid;
         

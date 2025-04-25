@@ -16,6 +16,7 @@ public class WanderingState : AStateBehaviour
     private int pathIndex = 0;
     private Rigidbody rb;
     private float switchCooldown = 1f; // wait between reaching nodes and getting a new path
+    private bool Attack;
     
     
     [SerializeField] private Transform[] waypoints;
@@ -42,6 +43,7 @@ public class WanderingState : AStateBehaviour
         
         PickRandomDestination();
         rb = gameObject.GetComponent<Rigidbody>();
+        Attack = GetComponent<EnemyCollision>().attacking;
     }
 
     public override void OnStateUpdate()
@@ -88,6 +90,10 @@ public class WanderingState : AStateBehaviour
         if (fov.FindPlayerTarget() != (int)EnemyState.Invalid)
         {
             return fov.FindPlayerTarget();   
+        }
+        if (Attack)
+        {
+            return (int)EnemyState.Attacking;
         }
         return (int)EnemyState.Invalid;
     }

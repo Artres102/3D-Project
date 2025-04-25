@@ -3,6 +3,6 @@ public enum EnemyState{
     Wandering = 0,
     Idle = 1,
     Chasing = 2,
-    Attack = 3,
+    Attacking = 3,
     Running = 4
 }

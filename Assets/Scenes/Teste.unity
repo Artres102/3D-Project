@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 838463913}
   - component: {fileID: 838463914}
   - component: {fileID: 838463906}
+  - component: {fileID: 838463915}
   - component: {fileID: 838463911}
   - component: {fileID: 838463912}
   m_Layer: 0
@@ -440,7 +441,7 @@ MonoBehaviour:
   - {fileID: 838463906}
   - {fileID: 838463907}
   - {fileID: 838463909}
-  - {fileID: 838463909}
+  - {fileID: 838463914}
   - {fileID: 838463913}
   defaultState: 0
 --- !u!54 &838463911
@@ -519,6 +520,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25596489f5f84244a87b84b65f448b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &838463915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838463899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41312ed3880280a4fa4d7620f21107d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attacking: 0
 --- !u!1 &854914564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,8 +1150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ad736ef1f32934da8b88ed00b0a849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Standingup: 0
-  playerMovement: {fileID: 0}
 --- !u!114 &1504346009
 MonoBehaviour:
   m_ObjectHideFlags: 0
