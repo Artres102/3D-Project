@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         GetInput();
+        SpeedCheat();
     }
 
     private void GetInput()
@@ -69,5 +70,17 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Move();
+        
+    }
+
+    private void SpeedCheat()
+    {
+        if (Input.GetKey(KeyCode.Plus) || Input.GetKey(KeyCode.KeypadPlus))
+        {
+            movementSpeed += 1f;
+        } else if (Input.GetKey(KeyCode.Minus) || Input.GetKey(KeyCode.KeypadMinus))
+        {
+            movementSpeed -= 1f;
+        }
     }
 }

@@ -12,7 +12,7 @@ public class Interactor : MonoBehaviour
 
         if (interactable != null)
         {
-            GameObject interactText = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
+            GameObject interactText = GameObject.Find("Interaction Canvas").transform.GetChild(0).gameObject;
             Debug.Log(interactText);
             interactText.SetActive(true);
         }
@@ -25,7 +25,7 @@ public class Interactor : MonoBehaviour
 
         if (interactable != null)
         {
-            GameObject interactText = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
+            GameObject interactText = GameObject.Find("Interaction Canvas").transform.GetChild(0).gameObject;
             interactText.SetActive(false);
         }
         

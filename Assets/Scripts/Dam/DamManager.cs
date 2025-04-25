@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class DamManager : MonoBehaviour
@@ -12,8 +13,8 @@ public class DamManager : MonoBehaviour
 
     [SerializeField] private int[] itemsCounter = new int[4];
     [SerializeField] private int[] currentUpgrade;
-    private bool[] itemsDone = new bool[4];
     private int damLevel = 0;
+    private Text damUpgradeUI;
     
     private InventoryScript inventoryScript;
 
@@ -24,7 +25,10 @@ public class DamManager : MonoBehaviour
         inventoryScript = GameObject.FindWithTag("Player").GetComponent<InventoryScript>();
         playerItems = inventoryScript.items;
 
+        damUpgradeUI = GameObject.FindWithTag("DamReq").GetComponent<Text>();
         currentUpgrade = GenerateUpgrade();
+        
+        DisplayCurrentUpgrade();
     }
 
     // Update is called once per frame
@@ -50,69 +54,69 @@ public class DamManager : MonoBehaviour
             return;
         }
 
-        foreach (Item item in inventoryScript.items.ToList())
+        foreach (Item item in playerItems.ToList())
         {
             Debug.Log("Depositing: " + item.itemName + " (ID: " + item.itemId + ")");
             inventoryScript.currentWeight -= item.itemWeight;
+            if (inventoryScript.currentWeight <= 0)
+            {
+                inventoryScript.currentWeight = 0;
+            }
             itemsCounter[item.itemId]++;
             inventoryScript.items.Remove(item);
         }
-        
+        inventoryScript.ShowInventory();
         CheckUpgrade();
-        // foreach (Item item in inventoryScript.items.ToList())
-        // {
-        //     inventoryScript.currentWeight -= item.itemWeight;
-        //     itemsInDam.Add(item);
-        //     inventoryScript.items.Remove(item);
-        // }
+        
+        DisplayCurrentUpgrade();
     }
 
     void CheckUpgrade()
     {
-        for (int i = 0; i < itemsCounter.Length; i++)
-        {
-            if (itemsCounter[i] >= currentUpgrade[i] && !itemsDone[i])
-            {
-                itemsCounter[i] -= currentUpgrade[i];
-                itemsDone[i] = true;
-            }
-        }
-        
         if (CheckDoneItems())
         {
             Debug.Log("I UPGRADED");
-            for (int i = 0; i < itemsDone.Length; i++)
+            for (int i = 0; i < itemsCounter.Length; i++)
             {
-                itemsDone[i] = false;
+                itemsCounter[i] -= currentUpgrade[i];
             }
 
             damLevel++;
 
-            GenerateUpgrade();
+            currentUpgrade = GenerateUpgrade();
         }
+        
     }
     
     bool CheckDoneItems()
     {
-        for (int i = 0; i < itemsDone.Length; i++)
+        for (int i = 0; i < itemsCounter.Length; i++)
         {
-            if (!itemsDone[i])
+            if (itemsCounter[i] < currentUpgrade[i])
             {
                 return false;
             }
         }
+
         return true;
     }
 
-
     int[] GenerateUpgrade()
     {
+        int[] requiredItems = new int[4];
+        if (damLevel < 1)
+        {
+            requiredItems[(int)ItemsEnum.Leaf] = 3;
+            requiredItems[(int)ItemsEnum.Stick] = 2;
+            requiredItems[(int)ItemsEnum.Log] = 2;
+            requiredItems[(int)ItemsEnum.Rock] = 1;
+            
+            return requiredItems;
+        }
         int sticks = Random.Range(1, 5);
         int logs = Random.Range(1, 5);
         int stones = Random.Range(1, 5);
         int leaves = Random.Range(1, 5);
-        
-        int[] requiredItems = new int[4];
 
         requiredItems[(int)ItemsEnum.Stick] = sticks;
         requiredItems[(int)ItemsEnum.Log] = logs;
@@ -120,5 +124,15 @@ public class DamManager : MonoBehaviour
         requiredItems[(int)ItemsEnum.Leaf] = leaves;
         
         return requiredItems;
+    }
+
+    void DisplayCurrentUpgrade()
+    {
+        damUpgradeUI.text = $"Current Dam Level: {damLevel}\n" +
+                            $"Items Required:\n" +
+                            $"Leaves - {itemsCounter[(int)ItemsEnum.Leaf]}/{currentUpgrade[(int)ItemsEnum.Leaf]}\n" +
+                            $"Sticks - {itemsCounter[(int)ItemsEnum.Stick]}/{currentUpgrade[(int)ItemsEnum.Stick]}\n" +
+                            $"Logs - {itemsCounter[(int)ItemsEnum.Log]}/{currentUpgrade[(int)ItemsEnum.Log]}\n" +
+                            $"Rocks - {itemsCounter[(int)ItemsEnum.Rock]}/{currentUpgrade[(int)ItemsEnum.Rock]}";;
     }
 }

@@ -13,8 +13,8 @@ public class Item : MonoBehaviour, IInteractable
     
     public bool Interact(Interactor interactor)
     { 
-        GameObject interactText = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
-        GameObject inventoryFullText = GameObject.Find("Canvas").transform.GetChild(1).gameObject;
+        GameObject interactText = GameObject.Find("Interaction Canvas").transform.GetChild(0).gameObject;
+        GameObject inventoryFullText = GameObject.Find("Interaction Canvas").transform.GetChild(1).gameObject;
         InventoryScript inventoryManager = GameObject.FindWithTag("Player").GetComponent<InventoryScript>();
         
         Debug.Log(itemWeight + " " + itemName);
@@ -49,6 +49,7 @@ public class Item : MonoBehaviour, IInteractable
         
         inventoryManager.currentWeight += itemWeight;
         inventoryManager.items.Add(this);
+        inventoryManager.ShowInventory();
         
         return true;
     }

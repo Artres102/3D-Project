@@ -9,8 +9,10 @@ public class ThirdPersonCamera : MonoBehaviour
     private GameObject target;
 
     // Rotation related variables
-    [SerializeField] private float sensitivity;
+    [SerializeField] private float horizontalSensitivity;
+    [SerializeField] private float verticalSensitivity;
     private float yRotation;
+    private float xRotation;
     private Vector3 rotate;
 
     // Position related variables
@@ -32,7 +34,8 @@ public class ThirdPersonCamera : MonoBehaviour
             MoveCamera();
             Debug.Log(target.name);
         }
-        sensitivity = PlayerPrefs.GetFloat("Sensitivity", 100f);
+        horizontalSensitivity = PlayerPrefs.GetFloat("horizontalSensitivity", 100f);
+        verticalSensitivity = PlayerPrefs.GetFloat("verticalSensitivity", 50f);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -40,13 +43,17 @@ public class ThirdPersonCamera : MonoBehaviour
     void Update()
     {
         transform.position = target.transform.position;
-        yRotation = Input.GetAxis("Mouse X");
-        rotate = new Vector3(0, yRotation, 0) * sensitivity * Time.deltaTime;
 
-        transform.rotation *= Quaternion.Euler(rotate);
+        yRotation += Input.GetAxis("Mouse X") * horizontalSensitivity * Time.deltaTime;
+        xRotation += Input.GetAxis("Mouse Y") * -1 * verticalSensitivity * Time.deltaTime;
+
+        xRotation = Mathf.Clamp(xRotation, -50f, 50f);
+
+        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
 
         MoveCamera();
     }
+
 
     void MoveCamera()
     {
@@ -79,6 +86,6 @@ public class ThirdPersonCamera : MonoBehaviour
 
         // Update the camera's position and rotation
         cameraTransform.position = cameraPosition;
-        cameraTransform.LookAt(targetPosition); // Always look at the target
+        cameraTransform.LookAt(targetPosition); 
     }
 }

@@ -11,6 +11,8 @@ TagManager:
   - Wolf
   - Capybara
   - Item
+  - Dam
+  - DamReq
   layers:
   - Default
   - TransparentFX
