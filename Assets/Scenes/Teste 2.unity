@@ -122,9 +122,9 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &201027577 stripped
+--- !u!4 &436081757 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 805688404456723663, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3242295270749474782, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
   m_PrefabInstance: {fileID: 944698414}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &656159393
@@ -429,8 +429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wpManager: {fileID: 2072485751}
-  enemy: {fileID: 838463912}
-  Player: {fileID: 201027577}
+  Player: {fileID: 436081757}
 --- !u!114 &838463910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -651,6 +650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7720321265781458341, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
+      propertyPath: attachedCamera
+      value: 
+      objectReference: {fileID: 1062691567}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1349,7 +1352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb914e7682c8e8c428306b52a369e408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 0
+  horizontalSensitivity: 0
+  verticalSensitivity: 0
   cameraPositionTransform: {fileID: 0}
   collideAgainst:
     serializedVersion: 2
