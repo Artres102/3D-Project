@@ -12,7 +12,7 @@ public class RunningState : AStateBehaviour
     private EnemyFoV fov;
     public Transform Player;
     private NavMeshAgent agent;
-    public float runAwayDistance = 5f;
+    public float runAwayDistance = 2f;
     
 
     public override bool InitializeState()

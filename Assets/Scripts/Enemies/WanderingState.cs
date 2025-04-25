@@ -70,6 +70,11 @@ public class WanderingState : AStateBehaviour
         rb.velocity = new Vector3(velocity.x, rb.velocity.y, velocity.z);
         //transform.position += dir * moveSpeed * Time.deltaTime;
         
+        if (dir != Vector3.zero)
+        {
+            float angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+        }
         
     }
 

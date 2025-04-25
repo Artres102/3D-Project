@@ -54,7 +54,12 @@ public class ChasingState : AStateBehaviour
         {
             return fov.FindPlayerTarget();   
         }
+        else if (StandingUp)
+        {
+            return (int)EnemyState.Running;
+        }
         return (int)EnemyState.Invalid;
+        
     }
     GameObject FindClosestWaypoint()
     {
