@@ -22,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            InvisibleCheat();
+        }
+        
         GetInput();
         SpeedCheat();
     }
@@ -35,29 +40,26 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         Vector3 camForward = attachedCamera.forward;
-        camForward.y = 0; // Ignore vertical component
         camForward.Normalize();
 
         Vector3 camRight = attachedCamera.right;
-        camRight.y = 0; // Ignore vertical component
         camRight.Normalize();
 
-        // Calculate the movement direction based on input
+        // Calculate the movement direction
         Vector3 movementDirection = (camForward * verticalInput + camRight * horizontalInput).normalized;
 
-        // Check if there is significant movement input
         if (movementDirection.magnitude > 0.1f) 
         {
             rb.velocity = new Vector3(movementDirection.x * movementSpeed, rb.velocity.y, movementDirection.z * movementSpeed);
         
-            // Calculate the target rotation based on the movement direction
+            // Calculate the target rotation
             Quaternion targetRotation = Quaternion.LookRotation(movementDirection);
 
             // Preserve the current X rotation while updating the Y rotation
             Vector3 currentRotation = transform.rotation.eulerAngles;
             targetRotation = Quaternion.Euler(currentRotation.x, targetRotation.eulerAngles.y, currentRotation.z);
 
-            // Smooth rotation of the player object
+            // Smooth rotation of the player
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
         }
         else
@@ -80,6 +82,20 @@ public class PlayerMovement : MonoBehaviour
         } else if (Input.GetKey(KeyCode.Minus) || Input.GetKey(KeyCode.KeypadMinus))
         {
             movementSpeed -= 1f;
+        }
+    }
+
+    private void InvisibleCheat()
+    {
+        if (gameObject.layer != LayerMask.NameToLayer("Ignore Raycast"))
+        {
+            gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+            gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.yellow);
+        }
+        else
+        {
+            gameObject.layer = LayerMask.NameToLayer("Default");
+            gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
         }
     }
 }

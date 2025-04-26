@@ -5,6 +5,7 @@ public class StandUp : MonoBehaviour
 {
     public bool Standingup = false;
     private PlayerMovement playerMovement;
+    private Quaternion rotation;
 
     public bool IsStandingUp()
     {
@@ -15,6 +16,7 @@ public class StandUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rotation = transform.rotation;
         playerMovement = gameObject.GetComponent<PlayerMovement>();
     }
 
@@ -25,6 +27,7 @@ public class StandUp : MonoBehaviour
         {
             Debug.Log("Standingup");
             Standingup = IsStandingUp();
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
         if (Standingup)
@@ -38,5 +41,6 @@ public class StandUp : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Standingup = false;
         playerMovement.enabled = true;
+        transform.rotation = rotation;
     }
 }
