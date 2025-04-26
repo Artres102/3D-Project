@@ -48,8 +48,6 @@ public class WanderingState : AStateBehaviour
 
     public override void OnStateUpdate()
     { 
-        
-        
         SetNextWaypoint();
     }
 
@@ -59,7 +57,7 @@ public class WanderingState : AStateBehaviour
 
         GameObject target = path[pathIndex].GetID();
         Debug.Log("Distance = " + Vector3.Distance(transform.position, target.transform.position));
-        if (Vector3.Distance(transform.position, target.transform.position) < 0.2f)
+        if (Vector3.Distance(transform.position, target.transform.position) < 1f)
         {
             pathIndex++;
             if (pathIndex >= path.Count)

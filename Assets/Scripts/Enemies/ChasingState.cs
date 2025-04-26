@@ -46,11 +46,6 @@ public class ChasingState : AStateBehaviour
 
     public override void OnStateEnd()
     {
-        if (StateTransitionCondition() == (int)EnemyState.Attacking)
-        {
-            return;
-        }
-
         GameObject destination = FindClosestWaypoint();
         Debug.Log("closest = " + destination.transform.position);
         agent.SetDestination(destination.transform.position);
@@ -63,7 +58,6 @@ public class ChasingState : AStateBehaviour
         {
             return (int)EnemyState.Attacking;
         }
-
         if (fov.FindPlayerTarget() != (int)EnemyState.Invalid)
         {
             return fov.FindPlayerTarget();
@@ -97,7 +91,7 @@ public class ChasingState : AStateBehaviour
 
     private IEnumerator CheckDestination(GameObject destination)
     {
-        yield return new WaitUntil(() => Vector3.Distance(transform.position, destination.transform.position) < 0.2f);
+        yield return new WaitUntil(() => Vector3.Distance(transform.position, destination.transform.position) < 1f);
         agent.ResetPath();
     }
 }

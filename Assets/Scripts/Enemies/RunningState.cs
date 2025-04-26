@@ -93,7 +93,7 @@ public class RunningState : AStateBehaviour
     
     private IEnumerator CheckDestination(GameObject destination)
     {
-        yield return new WaitUntil(() => Vector3.Distance(transform.position, destination.transform.position) < 0.5f);
+        yield return new WaitUntil(() => Vector3.Distance(transform.position, destination.transform.position) < 1f);
         agent.ResetPath();
     }
 }
