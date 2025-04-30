@@ -87,7 +87,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 12106, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Tree Data
   m_EditorClassIdentifier: 
-  _uniqueID: 114
+  _uniqueID: 124
   materialHash: 31d6cfe0d16ae931b73c59d7e0c089c0-583008256
   root:
     _uniqueID: 1
@@ -1210,7 +1210,7 @@ MonoBehaviour:
     animationEdge: 1
     visible: 1
     lockFlags: 0
-    nodeIDs: 5400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f0000007000000071000000
+    nodeIDs: 5400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000072000000730000007400000075000000760000007700000078000000790000007a0000007b000000
     parentGroupID: 81
     childGroupIDs: 
     geometryMode: 1
@@ -4888,7 +4888,7 @@ MonoBehaviour:
       e33: 1
     parentID: 82
     groupID: 83
-    _uniqueID: 104
+    _uniqueID: 114
   - spline:
       nodes: []
       tension: 0.5
@@ -4927,7 +4927,7 @@ MonoBehaviour:
       e33: 1
     parentID: 82
     groupID: 83
-    _uniqueID: 105
+    _uniqueID: 115
   - spline:
       nodes: []
       tension: 0.5
@@ -4966,7 +4966,7 @@ MonoBehaviour:
       e33: 1
     parentID: 82
     groupID: 83
-    _uniqueID: 106
+    _uniqueID: 116
   - spline:
       nodes: []
       tension: 0.5
@@ -5005,7 +5005,7 @@ MonoBehaviour:
       e33: 1
     parentID: 82
     groupID: 83
-    _uniqueID: 107
+    _uniqueID: 117
   - spline:
       nodes: []
       tension: 0.5
@@ -5044,7 +5044,7 @@ MonoBehaviour:
       e33: 1
     parentID: 82
     groupID: 83
-    _uniqueID: 108
+    _uniqueID: 118
   - spline:
       nodes: []
       tension: 0.5
@@ -5083,7 +5083,7 @@ MonoBehaviour:
       e33: 1
     parentID: 82
     groupID: 83
-    _uniqueID: 109
+    _uniqueID: 119
   - spline:
       nodes: []
       tension: 0.5
@@ -5122,7 +5122,7 @@ MonoBehaviour:
       e33: 1
     parentID: 82
     groupID: 83
-    _uniqueID: 110
+    _uniqueID: 120
   - spline:
       nodes: []
       tension: 0.5
@@ -5161,7 +5161,7 @@ MonoBehaviour:
       e33: 1
     parentID: 82
     groupID: 83
-    _uniqueID: 111
+    _uniqueID: 121
   - spline:
       nodes: []
       tension: 0.5
@@ -5200,7 +5200,7 @@ MonoBehaviour:
       e33: 1
     parentID: 82
     groupID: 83
-    _uniqueID: 112
+    _uniqueID: 122
   - spline:
       nodes: []
       tension: 0.5
@@ -5239,7 +5239,7 @@ MonoBehaviour:
       e33: 1
     parentID: 82
     groupID: 83
-    _uniqueID: 113
+    _uniqueID: 123
   mesh: {fileID: 5750314526064165942}
   optimizedSolidMaterial: {fileID: -5751986899886271303}
   optimizedCutoutMaterial: {fileID: 4414618133527302156}
