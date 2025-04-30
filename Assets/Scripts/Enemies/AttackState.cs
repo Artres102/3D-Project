@@ -38,6 +38,7 @@ public class AttackState : AStateBehaviour
     private IEnumerator WaitAndLoadScene(float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(1);
+		Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene(2);
     }
 }
