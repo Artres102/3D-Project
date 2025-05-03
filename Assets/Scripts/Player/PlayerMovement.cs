@@ -52,15 +52,14 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector3(movementDirection.x * movementSpeed, rb.velocity.y, movementDirection.z * movementSpeed);
         
-            // Calculate the target rotation
+            // Calculate the target rotation and the current rotation to keep the player on its side
             Quaternion targetRotation = Quaternion.LookRotation(movementDirection);
-
-            // Preserve the current X rotation while updating the Y rotation
             Vector3 currentRotation = transform.rotation.eulerAngles;
+            
             targetRotation = Quaternion.Euler(currentRotation.x, targetRotation.eulerAngles.y, currentRotation.z);
 
             // Smooth rotation of the player
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 15f);
         }
         else
         {

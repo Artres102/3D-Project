@@ -73,18 +73,24 @@ public class DamManager : MonoBehaviour
 
     void CheckUpgrade()
     {
-        if (CheckDoneItems())
+        if (!CheckDoneItems())
         {
-            Debug.Log("I UPGRADED");
-            for (int i = 0; i < itemsCounter.Length; i++)
-            {
-                itemsCounter[i] -= currentUpgrade[i];
-            }
-
-            damLevel++;
-
-            currentUpgrade = GenerateUpgrade();
+            return;
         }
+        
+        Debug.Log("I UPGRADED");
+        for (int i = 0; i < itemsCounter.Length; i++)
+        {
+            itemsCounter[i] -= currentUpgrade[i];
+        }
+
+        damLevel++;
+        
+        float damYScale = transform.localScale.y * (damLevel + 1);
+        Vector3 newScale = new Vector3(transform.localScale.x, damYScale, transform.localScale.z);
+        transform.localScale = newScale;
+            
+        currentUpgrade = GenerateUpgrade();
         
     }
     
