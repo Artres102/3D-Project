@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class AttackState : AStateBehaviour
 {
-
+    private PlayerMovement playerMovement;
     public override bool InitializeState()
     {
         return true;
@@ -14,6 +14,7 @@ public class AttackState : AStateBehaviour
     public override void OnStateStart()
     {
         Debug.Log("ATACKED");
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         StartCoroutine(WaitAndLoadScene(1f));
     }
 
@@ -37,6 +38,7 @@ public class AttackState : AStateBehaviour
     
     private IEnumerator WaitAndLoadScene(float delay)
     {
+        playerMovement.enabled = false;
         yield return new WaitForSeconds(delay);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
