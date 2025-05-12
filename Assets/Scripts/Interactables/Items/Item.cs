@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,7 @@ public class Item : MonoBehaviour, IInteractable
     public float itemWeight;
 
     public int itemId;
-    
+
     public bool Interact(Interactor interactor)
     { 
         if (!interactor) return false;
