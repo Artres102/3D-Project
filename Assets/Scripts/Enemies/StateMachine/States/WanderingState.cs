@@ -17,29 +17,15 @@ public class WanderingState : AStateBehaviour
     private Rigidbody rb;
     private float switchCooldown = 1f; // wait between reaching nodes and getting a new path
     private EnemyCollision collision;
-    
-    
-    [SerializeField] private Transform[] waypoints;
 
     private EnemyFoV fov;
 
-    public override bool InitializeState()
-    {
-        if (waypoints == null || waypoints.Length == 0)
-        {
-            return true;
-        }
-        
-        
-
-        return true;
-    }
+    public override bool InitializeState() => true;
 
     public override void OnStateStart()
     {
         Debug.Log("WANDERING");
         fov = GetComponent<EnemyFoV>();
-        SetNextWaypoint();
         
         PickRandomDestination();
         rb = gameObject.GetComponent<Rigidbody>();
@@ -47,8 +33,8 @@ public class WanderingState : AStateBehaviour
     }
 
     public override void OnStateUpdate()
-    { 
-        SetNextWaypoint();
+    {
+        return;
     }
 
     public override void OnStateFixedUpdate()
@@ -86,9 +72,10 @@ public class WanderingState : AStateBehaviour
     
     public override int StateTransitionCondition()
     {
-        if (fov.FindPlayerTarget() != (int)EnemyState.Invalid)
+        int findPlayerTarget = fov.FindPlayerTarget();
+        if (findPlayerTarget != (int)EnemyState.Invalid)
         {
-            return fov.FindPlayerTarget();   
+            return findPlayerTarget;
         }
         if (collision.attacking)
         {
@@ -96,15 +83,6 @@ public class WanderingState : AStateBehaviour
         }
         return (int)EnemyState.Invalid;
     }
-    
-    private void SetNextWaypoint()
-    {
-        if (waypoints.Length > 0)
-        {
-            int randomIndex = Random.Range(0, waypoints.Length);
-        }
-    }
-    
     
     void PickRandomDestination()
     {
@@ -117,8 +95,6 @@ public class WanderingState : AStateBehaviour
             destination = wpManager.waypoints[Random.Range(0, wpManager.waypoints.Length)];
             Debug.Log("dest = " + destination.transform.position);
         } while (destination == currentWaypoint); // avoid picking the same one
-
-        //currentWaypoint = destination;
 
         // find closest node 
         if (wpManager.graph.AStar(currentWaypoint, destination))

@@ -1,77 +1,80 @@
-﻿using System;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ChasingState : AStateBehaviour
+public class RunningState : AStateBehaviour
 {
     public WPManager wpManager;
     private EnemyFoV fov;
     public Transform player;
     private NavMeshAgent agent;
-    private StandUp standUp;
-    private EnemyCollision collision;
+    public float runAwayDistance = 5f;
 
-    [SerializeField] private float chaseSpeed = 10f; //speed of the animal while chasing
+    private bool destinationReached = false;
 
-    public override bool InitializeState() => true;
+    public override bool InitializeState()
+    {
+        return true;
+    }
 
     public override void OnStateStart()
     {
-        Debug.Log("CHASING");
-
+        Debug.Log("Running");
         fov = GetComponent<EnemyFoV>();
+        player = GameObject.FindWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
-        standUp = GameObject.FindWithTag("Player").GetComponent<StandUp>();
-        collision = GetComponent<EnemyCollision>();
+        destinationReached = false;
 
-        if (agent != null)
-        {
-            agent.speed = chaseSpeed;
-        }
+        // Define destination away from player
+        Vector3 directionAwayFromPlayer = (agent.transform.position - player.position).normalized;
+        Vector3 destination = agent.transform.position + directionAwayFromPlayer * runAwayDistance;
+        agent.SetDestination(destination);
     }
 
     public override void OnStateUpdate()
     {
-        // Nothing here right now
+        // Check if the agent has finished running away
+        if (!agent.pathPending && agent.remainingDistance <= 0.2f)
+        {
+            destinationReached = true;
+        }
+
+        // fov.suspicionLevel = lowerSuspicion(fov.suspicionLevel);
     }
 
     public override void OnStateFixedUpdate()
     {
-        if (player != null)
-        {
-            agent.SetDestination(player.position);
-        }
+        
     }
 
     public override void OnStateEnd()
     {
         GameObject destination = FindClosestWaypoint();
-        Debug.Log("closest = " + destination.transform.position);
+        Debug.Log("Closest waypoint = " + destination.transform.position);
         agent.SetDestination(destination.transform.position);
         StartCoroutine(CheckDestination(destination));
+        return;
     }
 
     public override int StateTransitionCondition()
     {
-        if (collision.attacking)
+        int findPlayerTarget = fov.FindPlayerTarget();
+        if (findPlayerTarget != (int)EnemyState.Invalid)
         {
-            return (int)EnemyState.Attacking;
-        }
-        if (fov.FindPlayerTarget() != (int)EnemyState.Invalid)
-        {
-            return fov.FindPlayerTarget();
+            return findPlayerTarget;
         }
 
-        if (standUp.standingUp)
+        // Return to wandering after reaching the runaway destination
+        if (destinationReached)
         {
-            return (int)EnemyState.Running;
+            return (int)EnemyState.Wandering;
         }
 
         return (int)EnemyState.Invalid;
     }
 
-    private GameObject FindClosestWaypoint()
+    GameObject FindClosestWaypoint()
     {
         float minDist = Mathf.Infinity;
         GameObject closest = wpManager.waypoints[0];
@@ -88,7 +91,7 @@ public class ChasingState : AStateBehaviour
 
         return closest;
     }
-
+    
     private IEnumerator CheckDestination(GameObject destination)
     {
         yield return new WaitUntil(() => Vector3.Distance(transform.position, destination.transform.position) < 1f);
