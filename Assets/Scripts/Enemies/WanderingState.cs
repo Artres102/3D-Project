@@ -121,7 +121,6 @@ public class WanderingState : AStateBehaviour
         //currentWaypoint = destination;
 
         // find closest node 
-        GameObject nearest = FindClosestWaypoint();
         if (wpManager.graph.AStar(currentWaypoint, destination))
         {
             Debug.Log("A STAR");
@@ -131,32 +130,4 @@ public class WanderingState : AStateBehaviour
         }
         currentWaypoint = destination;
     }
-
-    GameObject FindClosestWaypoint()
-    {
-        float minDist = Mathf.Infinity;
-        GameObject closest = wpManager.waypoints[0];
-
-        foreach (var wp in wpManager.waypoints)
-        {
-            float dist = Vector3.Distance(transform.position, wp.transform.position);
-            if (dist < minDist)
-            {
-                minDist = dist;
-                closest = wp;
-            }
-        }
-
-        return closest;
-    }
-    
-    
-    // private float lowerSuspicion(float suspicion)
-    // {
-    //     if (suspicion > 0f)
-    //     {
-    //         return suspicion - 15 * Time.deltaTime;
-    //     }
-    //     return suspicion;
-    // }
 }

@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            InvisibleCheat();
+            ToggleInvisibleCheat();
         }
         
         GetInput();
@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
             targetRotation = Quaternion.Euler(currentRotation.x, targetRotation.eulerAngles.y, currentRotation.z);
 
             // Smooth rotation of the player
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 15f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.fixedDeltaTime * 15f);
         }
         else
         {
@@ -84,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void InvisibleCheat()
+    private void ToggleInvisibleCheat()
     {
         if (gameObject.layer != LayerMask.NameToLayer("Ignore Raycast"))
         {

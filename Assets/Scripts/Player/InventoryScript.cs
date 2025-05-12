@@ -18,7 +18,7 @@ public class InventoryScript : MonoBehaviour
     void Start()
     {
         inventoryUI = GameObject.Find("UI").transform.GetChild(1).gameObject.GetComponent<Text>();
-        ShowInventory();
+        UpdateInventoryText();
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class InventoryScript : MonoBehaviour
         
     }
 
-    public void ShowInventory()
+    public void UpdateInventoryText()
     {
         string test = null;
         foreach (Item item in items)

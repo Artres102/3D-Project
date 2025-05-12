@@ -7,9 +7,9 @@ public class ChasingState : AStateBehaviour
 {
     public WPManager wpManager;
     private EnemyFoV fov;
-    public Transform Player;
+    public Transform player;
     private NavMeshAgent agent;
-    private StandUp StandUp;
+    private StandUp standUp;
     private EnemyCollision collision;
 
     [SerializeField] private float chaseSpeed = 10f; //speed of the animal while chasing
@@ -22,7 +22,7 @@ public class ChasingState : AStateBehaviour
 
         fov = GetComponent<EnemyFoV>();
         agent = GetComponent<NavMeshAgent>();
-        StandUp = GameObject.FindWithTag("Player").GetComponent<StandUp>();
+        standUp = GameObject.FindWithTag("Player").GetComponent<StandUp>();
         collision = GetComponent<EnemyCollision>();
 
         if (agent != null)
@@ -38,9 +38,9 @@ public class ChasingState : AStateBehaviour
 
     public override void OnStateFixedUpdate()
     {
-        if (Player != null)
+        if (player != null)
         {
-            agent.SetDestination(Player.position);
+            agent.SetDestination(player.position);
         }
     }
 
@@ -63,7 +63,7 @@ public class ChasingState : AStateBehaviour
             return fov.FindPlayerTarget();
         }
 
-        if (StandUp.Standingup)
+        if (standUp.standingUp)
         {
             return (int)EnemyState.Running;
         }

@@ -19,7 +19,7 @@ public class AttackState : AStateBehaviour
 
     public override void OnStateUpdate()
     {
-        // Handle alarm behavior
+        
     }
     public override void OnStateFixedUpdate()
     {
@@ -27,18 +27,19 @@ public class AttackState : AStateBehaviour
     }
     public override void OnStateEnd()
     {
-        // Cleanup if necessary
+        
     }
 
     public override int StateTransitionCondition()
     { 
-        return (int)EnemyState.Invalid;// Default: no transition
+        return (int)EnemyState.Invalid;
     }
     
     private IEnumerator WaitAndLoadScene(float delay)
     {
         yield return new WaitForSeconds(delay);
-		Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(2);
     }
 }

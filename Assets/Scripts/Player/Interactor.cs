@@ -5,6 +5,12 @@ using UnityEngine;
 public class Interactor : MonoBehaviour
 { 
     public float distance;
+    [SerializeField] private GameObject interactText;
+
+    void Start()
+    {
+        interactText = GameObject.Find("Interaction Canvas").transform.GetChild(0).gameObject;
+    }
     void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name);
@@ -12,7 +18,6 @@ public class Interactor : MonoBehaviour
 
         if (interactable != null)
         {
-            GameObject interactText = GameObject.Find("Interaction Canvas").transform.GetChild(0).gameObject;
             Debug.Log(interactText);
             interactText.SetActive(true);
         }
@@ -25,7 +30,6 @@ public class Interactor : MonoBehaviour
 
         if (interactable != null)
         {
-            GameObject interactText = GameObject.Find("Interaction Canvas").transform.GetChild(0).gameObject;
             interactText.SetActive(false);
         }
         

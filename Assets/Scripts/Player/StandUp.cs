@@ -3,14 +3,13 @@ using System.Collections;
 
 public class StandUp : MonoBehaviour
 {
-    public bool Standingup = false;
+    public bool standingUp = false;
     private PlayerMovement playerMovement;
     private Quaternion rotation;
 
-    public bool IsStandingUp()
+    public void DisableMovement()
     {
         playerMovement.enabled = false;
-        return true;
     }
 
     // Start is called before the first frame update
@@ -26,11 +25,12 @@ public class StandUp : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             Debug.Log("Standingup");
-            Standingup = IsStandingUp();
+            standingUp = true;
+            DisableMovement();
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (Standingup)
+        if (standingUp)
         {
             StartCoroutine(RestoreMovement());
         }
@@ -39,7 +39,7 @@ public class StandUp : MonoBehaviour
     private IEnumerator RestoreMovement()
     {
         yield return new WaitForSeconds(1f);
-        Standingup = false;
+        standingUp = false;
         playerMovement.enabled = true;
         transform.rotation = rotation;
     }

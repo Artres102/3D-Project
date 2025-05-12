@@ -8,11 +8,9 @@ public class EnemyCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.tag + "Eu sei que sim");
         if (collision.gameObject.CompareTag("Player"))
         {
             attacking = true;
-            Debug.Log(attacking);
         }
     }
     

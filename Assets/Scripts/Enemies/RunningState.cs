@@ -7,7 +7,7 @@ public class RunningState : AStateBehaviour
 {
     public WPManager wpManager;
     private EnemyFoV fov;
-    public Transform Player;
+    public Transform player;
     private NavMeshAgent agent;
     public float runAwayDistance = 5f;
 
@@ -26,7 +26,7 @@ public class RunningState : AStateBehaviour
         destinationReached = false;
 
         // Define destination away from player
-        Vector3 directionAwayFromPlayer = (agent.transform.position - Player.position).normalized;
+        Vector3 directionAwayFromPlayer = (agent.transform.position - player.position).normalized;
         Vector3 destination = agent.transform.position + directionAwayFromPlayer * runAwayDistance;
         agent.SetDestination(destination);
     }
