@@ -21,10 +21,13 @@ public class WanderingState : AStateBehaviour
     private EnemyFoV fov;
 
     public override bool InitializeState() => true;
+    
+    private float maxWanderTime = 18f;  
+    private float wanderTimer = 0f;   // keep track of the time
 
     public override void OnStateStart()
     {
-        Debug.Log("WANDERING");
+        //Debug.Log("WANDERING");
         fov = GetComponent<EnemyFoV>();
         
         PickRandomDestination();
@@ -40,9 +43,17 @@ public class WanderingState : AStateBehaviour
     public override void OnStateFixedUpdate()
     {
         if (path == null || pathIndex >= path.Count) return;
+        
+        wanderTimer += Time.fixedDeltaTime;
+        if (wanderTimer >= maxWanderTime)
+        {
+            //Debug.Log("Wander timeout reached, picking a new destination");
+            PickRandomDestination();
+            return;
+        }
 
         GameObject target = path[pathIndex].GetID();
-        Debug.Log("Distance = " + Vector3.Distance(transform.position, target.transform.position));
+        //Debug.Log("Distance = " + Vector3.Distance(transform.position, target.transform.position));
         if (Vector3.Distance(transform.position, target.transform.position) < 1f)
         {
             pathIndex++;
@@ -93,16 +104,15 @@ public class WanderingState : AStateBehaviour
         do
         {
             destination = wpManager.waypoints[Random.Range(0, wpManager.waypoints.Length)];
-            Debug.Log("dest = " + destination.transform.position);
+            //Debug.Log("dest = " + destination.transform.position);
         } while (destination == currentWaypoint); // avoid picking the same one
 
-        // find closest node 
         if (wpManager.graph.AStar(currentWaypoint, destination))
         {
-            Debug.Log("A STAR");
+            //Debug.Log("A STAR");
             path = wpManager.graph.pathList;
-            Debug.Log("path = " + path.Count);
             pathIndex = 0;
+            wanderTimer = 0f; 
         }
         currentWaypoint = destination;
     }
