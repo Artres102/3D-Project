@@ -49,7 +49,6 @@ public class Item : MonoBehaviour, IInteractable
             return false;
         }
         
-        
         inventoryManager.currentWeight += itemWeight;
         inventoryManager.items.Add(this);
         inventoryManager.UpdateInventoryText();
