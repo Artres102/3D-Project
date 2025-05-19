@@ -19,6 +19,8 @@ public class ChasingState : AStateBehaviour
     public override void OnStateStart()
     {
         Debug.Log("CHASING");
+        
+        AudioManager.Instance.Play(AudioManager.SoundType.Chasing);
 
         fov = GetComponent<EnemyFoV>();
         agent = GetComponent<NavMeshAgent>();

@@ -7,8 +7,8 @@ public class AudioManager : MonoBehaviour
     {
         Jump,
         Powerup,
-        Shoot,
-        Music_Menu,
+        Chasing,
+        MainMusic,
         Music_Battle
         // Add more sound types as needed
     }
