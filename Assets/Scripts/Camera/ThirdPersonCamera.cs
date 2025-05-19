@@ -11,6 +11,7 @@ public class ThirdPersonCamera : MonoBehaviour
     // Rotation related variables
     [SerializeField] private float horizontalSensitivity;
     [SerializeField] private float verticalSensitivity;
+    [SerializeField] private float verticalFramingOffset = 1.5f;
     private float yRotation;
     private float xRotation;
     private Vector3 rotate;
@@ -21,7 +22,7 @@ public class ThirdPersonCamera : MonoBehaviour
     // Collision related variables
     public LayerMask collideAgainst = 1; // Layers to collide with
     public float minimumDistanceFromTarget = 0.1f;
-    public float cameraRadius = 0.1f; // Radius of the camera for collision detection
+    public float cameraRadius = 0.1f;
 
     void Start()
     {
@@ -86,6 +87,8 @@ public class ThirdPersonCamera : MonoBehaviour
 
         // Update the camera's position and rotation
         cameraTransform.position = cameraPosition;
-        cameraTransform.LookAt(targetPosition); 
+        Vector3 lookTarget = target.transform.position + Vector3.up * verticalFramingOffset;
+        cameraTransform.LookAt(lookTarget);
+ 
     }
 }

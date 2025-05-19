@@ -65,6 +65,7 @@ public class DamManager : MonoBehaviour
             itemsCounter[item.itemId]++;
             inventoryScript.items.Remove(item);
         }
+        
         inventoryScript.UpdateInventoryText();
         CheckUpgrade();
         
