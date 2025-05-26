@@ -20,7 +20,7 @@ public class IdleState : AStateBehaviour
     {
         Debug.Log("IDLE");
         
-        fov = gameObject.GetComponent<EnemyFoV>();
+        if (!fov) fov = GetComponent<EnemyFoV>();
     }
 
     public override void OnStateUpdate()

@@ -12,6 +12,8 @@ public class RunningState : AStateBehaviour
     public float runAwayDistance = 5f;
 
     private bool destinationReached = false;
+    
+    private GameManager gameManager;
 
     public override bool InitializeState()
     {
@@ -20,10 +22,12 @@ public class RunningState : AStateBehaviour
 
     public override void OnStateStart()
     {
+        gameManager = GameManager.Instance;
+        
         Debug.Log("Running");
-        fov = GetComponent<EnemyFoV>();
-        player = GameObject.FindWithTag("Player").transform;
-        agent = GetComponent<NavMeshAgent>();
+        if (!fov) fov = GetComponent<EnemyFoV>();
+        if (!player) player = gameManager.player.transform;
+        if (!agent) agent = GetComponent<NavMeshAgent>();
         destinationReached = false;
 
         // Define destination away from player

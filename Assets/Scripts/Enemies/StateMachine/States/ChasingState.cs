@@ -11,6 +11,8 @@ public class ChasingState : AStateBehaviour
     private NavMeshAgent agent;
     private StandUp standUp;
     private EnemyCollision collision;
+    
+    private GameManager gameManager;
 
     [SerializeField] private float chaseSpeed = 10f; //speed of the animal while chasing
 
@@ -22,11 +24,11 @@ public class ChasingState : AStateBehaviour
         
         AudioManager.Instance.Play(AudioManager.SoundType.Chasing);
 
-        fov = GetComponent<EnemyFoV>();
-        agent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindWithTag("Player").transform;
-        standUp = player.GetComponent<StandUp>();
-        collision = GetComponent<EnemyCollision>();
+        if (!player) player = gameManager.player.transform;
+        if (!fov) fov = GetComponent<EnemyFoV>();
+        if (!agent) agent = GetComponent<NavMeshAgent>(); ;
+        if (!standUp) standUp = player.GetComponent<StandUp>();
+        if (!collision) collision = GetComponent<EnemyCollision>();
 
         if (agent != null)
         {

@@ -27,9 +27,9 @@ public class WanderingState : AStateBehaviour
     public override void OnStateStart()
     {
         Debug.Log("WANDERING");
-        fov = GetComponent<EnemyFoV>();
-        rb = GetComponent<Rigidbody>();
-        collision = GetComponent<EnemyCollision>();
+        if (!fov) fov = GetComponent<EnemyFoV>();
+        if (!rb) rb = GetComponent<Rigidbody>();
+        if (!collision) collision = GetComponent<EnemyCollision>();
 
         PickRandomDestination();
     }

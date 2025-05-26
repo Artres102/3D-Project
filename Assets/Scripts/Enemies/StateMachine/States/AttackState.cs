@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class AttackState : AStateBehaviour
 {
     private PlayerMovement playerMovement;
+    private GameManager gameManager;
     public override bool InitializeState()
     {
         return true;
@@ -13,8 +14,10 @@ public class AttackState : AStateBehaviour
 
     public override void OnStateStart()
     {
+        gameManager = GameManager.Instance;
+        
         Debug.Log("ATACKED");
-        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        playerMovement = gameManager.player.GetComponent<PlayerMovement>();
         StartCoroutine(WaitAndLoadScene(1f));
     }
 

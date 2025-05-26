@@ -7,6 +7,7 @@ public class ThirdPersonCamera : MonoBehaviour
     // Object related variables
     private Transform cameraTransform;
     private GameObject target;
+    private GameManager gameManager;
 
     // Rotation related variables
     [SerializeField] private float horizontalSensitivity;
@@ -26,8 +27,10 @@ public class ThirdPersonCamera : MonoBehaviour
 
     void Start()
     {
-        target = GameObject.FindWithTag("Player");
-        cameraTransform = GameObject.FindWithTag("MainCamera").GetComponent<Transform>();
+        gameManager = GameManager.Instance;
+        
+        target = gameManager.player;
+        cameraTransform = gameManager.camera.GetComponent<Transform>();
         cameraPositionTransform = transform.GetChild(0);
 
         if (target != null && cameraTransform != null)

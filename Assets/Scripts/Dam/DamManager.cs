@@ -17,15 +17,19 @@ public class DamManager : MonoBehaviour
     private Text damUpgradeUI;
     
     private InventoryScript inventoryScript;
+    
+    private GameManager gameManager;
 
     private List<Item> playerItems;
     // Start is called before the first frame update
     void Start()
     {
-        inventoryScript = GameObject.FindWithTag("Player").GetComponent<InventoryScript>();
+        gameManager = GameManager.Instance;
+        
+        inventoryScript = gameManager.player.GetComponent<InventoryScript>();
         playerItems = inventoryScript.items;
 
-        damUpgradeUI = GameObject.FindWithTag("DamReq").GetComponent<Text>();
+        damUpgradeUI = gameManager.damUI.GetComponent<Text>();
         currentUpgrade = GenerateUpgrade();
         
         DisplayCurrentUpgrade();
