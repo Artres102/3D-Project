@@ -20,6 +20,7 @@ public class ChasingState : AStateBehaviour
 
     public override void OnStateStart()
     {
+        gameManager = GameManager.Instance;
         Debug.Log("CHASING");
         
         AudioManager.Instance.Play(AudioManager.SoundType.Chasing);

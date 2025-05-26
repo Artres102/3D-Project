@@ -3,18 +3,18 @@ using UnityEngine;
 public class InteractableHideout : MonoBehaviour, IInteractable
 {
     private bool isInsideHideout = false;
-    private int originalLayer = -1; 
+    private int originalLayer = -1;
+    private GameObject player;
+    
+    private GameManager gameManager;
+
+    void Start()
+    {
+        if (!player) player = gameManager.player;
+    }
 
     public bool Interact(Interactor interactor)
-    {
-        GameObject player = GameObject.FindWithTag("Player");
-
-        if (player == null)
-        {
-            Debug.LogError("Player not found!");
-            return false;
-        }
-
+    { 
         // Original layer change
         if (originalLayer == -1)
         {

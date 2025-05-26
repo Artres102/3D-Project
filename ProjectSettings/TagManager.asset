@@ -12,8 +12,9 @@ TagManager:
   - Capybara
   - Item
   - Dam
-  - DamReq
   - Waypoint Manager
+  - DamUI
+  - Interaction Canvas
   layers:
   - Default
   - TransparentFX

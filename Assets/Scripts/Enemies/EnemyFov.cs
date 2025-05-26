@@ -15,12 +15,16 @@ public class EnemyFoV : MonoBehaviour
     public float aggressionLevel = 0f;
     private StateMachine stateMachine;
     private ChasingState chasingState;
+    
+    private GameManager gameManager;
 
     private void Start()
     {
-        stateMachine = gameObject.GetComponent<StateMachine>();
-        chasingState = gameObject.GetComponent<ChasingState>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        gameManager = GameManager.Instance;
+        
+        if (!stateMachine) stateMachine = GetComponent<StateMachine>();
+        if (!chasingState) chasingState = gameObject.GetComponent<ChasingState>();
+        if (!player) player = gameManager.player;
     }
 
     private void Update()
