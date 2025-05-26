@@ -12,6 +12,8 @@ public class InteractableHideout : MonoBehaviour, IInteractable
 
     void Start()
     {
+        gameManager = GameManager.Instance;
+        
         if (!player) player = gameManager.player;
         if (!canvas) canvas = gameManager.interactionCanvas;
         interactText = canvas.transform.GetChild(0).gameObject;

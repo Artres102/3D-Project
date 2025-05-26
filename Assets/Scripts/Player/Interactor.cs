@@ -12,7 +12,7 @@ public class Interactor : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         
-        interactText = gameManager.transform.GetChild(0).gameObject;
+        interactText = gameManager.interactionCanvas.transform.GetChild(0).gameObject;
     }
     void OnTriggerEnter(Collider other)
     {

@@ -10,7 +10,7 @@ public class GameManager : Singleton<GameManager>
     public GameObject interactionCanvas;
     public GameObject UI;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         camera = GameObject.FindGameObjectWithTag("MainCamera");
