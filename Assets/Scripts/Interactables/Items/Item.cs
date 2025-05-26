@@ -7,18 +7,26 @@ using UnityEngine.EventSystems;
 public class Item : MonoBehaviour, IInteractable
 {
     public string itemName;
-
     public float itemWeight;
-
     public int itemId;
 
+    private GameObject interactText;
+    private GameObject inventoryFullText;
+    private InventoryScript inventoryManager;
+    
+    private GameManager gameManager;
+    void Start()
+    {
+        gameManager = GameManager.Instance;
+        
+        GameObject interactionCanvas = gameManager.interactionCanvas;
+        interactText = interactionCanvas.transform.GetChild(0).gameObject;
+        inventoryFullText = interactionCanvas.transform.GetChild(1).gameObject; 
+        inventoryManager = gameManager.player.GetComponent<InventoryScript>();
+    }
     public bool Interact(Interactor interactor)
     { 
         if (!interactor) return false;
-        
-        GameObject interactText = GameObject.Find("Interaction Canvas").transform.GetChild(0).gameObject;
-        GameObject inventoryFullText = GameObject.Find("Interaction Canvas").transform.GetChild(1).gameObject;
-        InventoryScript inventoryManager = GameObject.FindWithTag("Player").GetComponent<InventoryScript>();
         
         Debug.Log(itemWeight + " " + itemName);
         

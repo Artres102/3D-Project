@@ -7,26 +7,22 @@ using UnityEngine.UI;
 public class InventoryScript : MonoBehaviour
 {
     public List<Item> items;
-
     public float maxWeight = 10f;
     
-    // Might remove variable in the future, being replaced by a foreach loop in the items Interact function
     public float currentWeight = 0f;
     
     private Text inventoryUI;
+    
+    private GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
-        inventoryUI = GameObject.Find("UI").transform.GetChild(1).gameObject.GetComponent<Text>();
+        gameManager = GameManager.Instance;
+        
+        inventoryUI = gameManager.UI.transform.GetChild(1).gameObject.GetComponent<Text>();
         UpdateInventoryText();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void UpdateInventoryText()
     {
         string test = null;

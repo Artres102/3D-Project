@@ -5,12 +5,16 @@ public class InteractableHideout : MonoBehaviour, IInteractable
     private bool isInsideHideout = false;
     private int originalLayer = -1;
     private GameObject player;
+    private GameObject canvas;
+    private GameObject interactText;
     
     private GameManager gameManager;
 
     void Start()
     {
         if (!player) player = gameManager.player;
+        if (!canvas) canvas = gameManager.interactionCanvas;
+        interactText = canvas.transform.GetChild(0).gameObject;
     }
 
     public bool Interact(Interactor interactor)
@@ -49,10 +53,8 @@ public class InteractableHideout : MonoBehaviour, IInteractable
         }
 
         // Hide UI
-        GameObject canvas = GameObject.Find("Canvas");
         if (canvas != null && canvas.transform.childCount > 0)
         {
-            GameObject interactText = canvas.transform.GetChild(0).gameObject;
             interactText.SetActive(false);
         }
 

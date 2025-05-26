@@ -7,9 +7,12 @@ public class Interactor : MonoBehaviour
     public float distance;
     [SerializeField] private GameObject interactText;
 
+    private GameManager gameManager;
     void Start()
     {
-        interactText = GameObject.Find("Interaction Canvas").transform.GetChild(0).gameObject;
+        gameManager = GameManager.Instance;
+        
+        interactText = gameManager.transform.GetChild(0).gameObject;
     }
     void OnTriggerEnter(Collider other)
     {

@@ -8,6 +8,7 @@ public class GameManager : Singleton<GameManager>
     public GameObject camera;
     public GameObject damUI;
     public GameObject interactionCanvas;
+    public GameObject UI;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +16,6 @@ public class GameManager : Singleton<GameManager>
         camera = GameObject.FindGameObjectWithTag("MainCamera");
         damUI = GameObject.FindGameObjectWithTag("DamUI");
         interactionCanvas = GameObject.FindGameObjectWithTag("Interaction Canvas");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        UI = GameObject.Find("UI");
     }
 }
