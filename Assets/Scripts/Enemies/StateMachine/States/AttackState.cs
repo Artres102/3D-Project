@@ -45,6 +45,7 @@ public class AttackState : AStateBehaviour
         yield return new WaitForSeconds(delay);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        Destroy(GameManager.Instance);
         SceneManager.LoadScene(2);
     }
 }
