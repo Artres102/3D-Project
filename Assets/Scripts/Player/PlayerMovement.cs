@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        AudioManager.Instance.Play(AudioManager.SoundType.MainMusic);
     }
 
     void Update()

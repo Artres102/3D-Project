@@ -23,7 +23,7 @@ public class ChasingState : AStateBehaviour
         gameManager = GameManager.Instance;
         Debug.Log("CHASING");
         
-        AudioManager.Instance.Play(AudioManager.SoundType.Chasing);
+        gameObject.GetComponent<AudioSource> ().Play ();
 
         if (!player) player = gameManager.player.transform;
         if (!fov) fov = GetComponent<EnemyFoV>();
@@ -52,6 +52,7 @@ public class ChasingState : AStateBehaviour
 
     public override void OnStateEnd()
     {
+        gameObject.GetComponent<AudioSource> ().Stop ();
         GameObject destination = FindClosestWaypoint();
         Debug.Log("closest = " + destination.transform.position);
         agent.SetDestination(destination.transform.position);
