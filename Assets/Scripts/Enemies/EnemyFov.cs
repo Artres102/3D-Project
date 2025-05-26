@@ -94,4 +94,9 @@ public class EnemyFoV : MonoBehaviour
             return aggression + 25 * aggressionFactor * Time.deltaTime;
         } 
     }
+
+    private void DrawLines()
+    {
+        
+    }
 }

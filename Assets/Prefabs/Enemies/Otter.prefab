@@ -18,9 +18,8 @@ GameObject:
   - component: {fileID: 4689749673282208478}
   - component: {fileID: 7198026750104206723}
   - component: {fileID: 2915338595989668259}
-  - component: {fileID: 209851842274638488}
-  - component: {fileID: 9678499950609781}
   - component: {fileID: 1260424284753067256}
+  - component: {fileID: 9678499950609781}
   - component: {fileID: 6078764449690718090}
   - component: {fileID: 1724626711936345580}
   m_Layer: 0
@@ -180,7 +179,6 @@ MonoBehaviour:
   wpManager: {fileID: 0}
   currentWaypoint: {fileID: 0}
   moveSpeed: 200
-  waypoints: []
 --- !u!114 &4689749673282208478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wpManager: {fileID: 0}
-  Player: {fileID: 0}
+  player: {fileID: 0}
   chaseSpeed: 10
 --- !u!114 &2915338595989668259
 MonoBehaviour:
@@ -221,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25596489f5f84244a87b84b65f448b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &209851842274638488
+--- !u!114 &1260424284753067256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wpManager: {fileID: 0}
-  Player: {fileID: 0}
+  player: {fileID: 0}
   runAwayDistance: 5
 --- !u!114 &9678499950609781
 MonoBehaviour:
@@ -249,21 +247,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attacking: 0
---- !u!114 &1260424284753067256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2150292792058773712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eca05b80cb2d90341b1983002460a073, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wpManager: {fileID: 0}
-  Player: {fileID: 0}
-  runAwayDistance: 5
 --- !u!114 &6078764449690718090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,7 +300,7 @@ GameObject:
   - component: {fileID: 1520690782916359255}
   - component: {fileID: 4941991690522244072}
   - component: {fileID: 9041032813182673541}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}

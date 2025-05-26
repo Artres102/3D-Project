@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5642651343418661028}
   - component: {fileID: 7628745326799881447}
   - component: {fileID: 1039532600371092661}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,6 @@ MonoBehaviour:
   wpManager: {fileID: 0}
   currentWaypoint: {fileID: 0}
   moveSpeed: 300
-  waypoints: []
 --- !u!114 &8852330071359558026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,7 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wpManager: {fileID: 0}
-  Player: {fileID: 0}
+  player: {fileID: 0}
   chaseSpeed: 10
 --- !u!114 &2323694011348895656
 MonoBehaviour:
@@ -337,7 +336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wpManager: {fileID: 0}
-  Player: {fileID: 0}
+  player: {fileID: 0}
   runAwayDistance: 5
 --- !u!114 &1371128436792632771
 MonoBehaviour:
