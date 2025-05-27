@@ -139,11 +139,9 @@ public class DamManager : MonoBehaviour
 
     void DisplayCurrentUpgrade()
     {
-        damUpgradeUI.text = $"Current Dam Level: {damLevel}\n" +
-                            "Items Required:\n" +
-                            $"Leaves - {itemsCounter[(int)ItemsEnum.Leaf]}/{currentUpgrade[(int)ItemsEnum.Leaf]}\n" +
-                            $"Sticks - {itemsCounter[(int)ItemsEnum.Stick]}/{currentUpgrade[(int)ItemsEnum.Stick]}\n" +
-                            $"Logs - {itemsCounter[(int)ItemsEnum.Log]}/{currentUpgrade[(int)ItemsEnum.Log]}\n" +
-                            $"Rocks - {itemsCounter[(int)ItemsEnum.Rock]}/{currentUpgrade[(int)ItemsEnum.Rock]}";;
+        damUpgradeUI.text = $"{itemsCounter[(int)ItemsEnum.Leaf]}/{currentUpgrade[(int)ItemsEnum.Leaf]}\n\n" +
+                            $"{itemsCounter[(int)ItemsEnum.Stick]}/{currentUpgrade[(int)ItemsEnum.Stick]}\n\n" +
+                            $"{itemsCounter[(int)ItemsEnum.Log]}/{currentUpgrade[(int)ItemsEnum.Log]}\n\n" +
+                            $"{itemsCounter[(int)ItemsEnum.Rock]}/{currentUpgrade[(int)ItemsEnum.Rock]}";
     }
 }
