@@ -2677,8 +2677,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4303663451675521058, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 202.6911
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303663451675521058, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 424.3697
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303663451675521058, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 880
+      value: 878
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303663451675521058, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -398
       objectReference: {fileID: 0}
     - target: {fileID: 4341544100111892961, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
       propertyPath: m_TagString
@@ -2779,6 +2791,23 @@ PrefabInstance:
     - target: {fileID: 5706729596924544353, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082386836624143430, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_Text
+      value: 'Level: 0
+
+
+
+        0/0
+
+
+        0/0
+
+
+        0/0
+
+
+        0/0'
       objectReference: {fileID: 0}
     - target: {fileID: 8095444998536918099, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
       propertyPath: m_AnchoredPosition.x
