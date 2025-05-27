@@ -2576,6 +2576,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: DamUI
       objectReference: {fileID: 0}
+    - target: {fileID: 5202794737011686912, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: bb5d5a990ff9e46498eba86223acfff0, type: 3}
     - target: {fileID: 5648022937649473307, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
       propertyPath: m_Pivot.x
       value: 0

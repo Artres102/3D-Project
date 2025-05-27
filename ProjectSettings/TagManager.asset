@@ -15,6 +15,7 @@ TagManager:
   - Waypoint Manager
   - DamUI
   - Interaction Canvas
+  - InventoryUI
   layers:
   - Default
   - TransparentFX
