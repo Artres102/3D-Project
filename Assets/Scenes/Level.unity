@@ -2572,14 +2572,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4303663451675521058, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 880
+      objectReference: {fileID: 0}
     - target: {fileID: 4341544100111892961, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
       propertyPath: m_TagString
       value: DamUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4712302471047215710, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 917
       objectReference: {fileID: 0}
     - target: {fileID: 5202794737011686912, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: bb5d5a990ff9e46498eba86223acfff0, type: 3}
+    - target: {fileID: 5584038080725561330, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 917
+      objectReference: {fileID: 0}
     - target: {fileID: 5648022937649473307, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2663,6 +2675,27 @@ PrefabInstance:
     - target: {fileID: 5706729596924544353, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095444998536918099, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 917
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194445682693252390, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 917
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226904026765392550, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_Text
+      value: '0 Leaf
+
+
+        0 Stick
+
+
+        0 LOg
+
+
+        0 Rock'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4171,7 +4204,7 @@ MonoBehaviour:
   camera: {fileID: 0}
   damUI: {fileID: 0}
   interactionCanvas: {fileID: 0}
-  UI: {fileID: 0}
+  inventoryUI: {fileID: 0}
 --- !u!4 &624446263
 Transform:
   m_ObjectHideFlags: 0

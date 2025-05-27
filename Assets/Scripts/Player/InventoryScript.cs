@@ -19,17 +19,26 @@ public class InventoryScript : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         
-        inventoryUI = gameManager.UI.transform.GetChild(1).gameObject.GetComponent<Text>();
+        inventoryUI = gameManager.inventoryUI.GetComponent<Text>();
         UpdateInventoryText();
     }
     
     public void UpdateInventoryText()
     {
-        string test = null;
+        int leafCount = 0;
+        int stickCount = 0;
+        int logCount = 0;
+        int rockCount = 0;
         foreach (Item item in items)
         {
-            test += $"{item.itemName}\n";
+            switch (item.itemId)
+            {
+                case (int)ItemsEnum.Leaf: leafCount++; break;
+                case (int)ItemsEnum.Stick: stickCount++; break;
+                case (int)ItemsEnum.Log: logCount++; break;
+                case (int)ItemsEnum.Rock: rockCount++; break;
+            }
         }
-        inventoryUI.text = $"Current Inventory: {currentWeight}/{maxWeight}\n" + test;
+        inventoryUI.text = $"{leafCount}\n\n{stickCount}\n\n{logCount}\n\n{rockCount}";
     }
 }
