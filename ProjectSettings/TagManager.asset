@@ -16,6 +16,7 @@ TagManager:
   - DamUI
   - Interaction Canvas
   - InventoryUI
+  - Audio
   layers:
   - Default
   - TransparentFX

@@ -102,7 +102,7 @@ public class WanderingState : AStateBehaviour
     
     private void OnCollisionEnter(Collision other)
     {
-     //   if (!enabled || path == null || pathIndex >= path.Count || isCheckingStuck) return;
+        if (!enabled || path == null || pathIndex >= path.Count || isCheckingStuck) return;
 
         if (other.gameObject.CompareTag("Player")) return;
         
