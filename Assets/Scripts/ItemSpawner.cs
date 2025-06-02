@@ -21,7 +21,7 @@ public class ItemSpawner : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameManager.Instance.player;
         
         for (int i = 0; i < amount; i++)
         {
