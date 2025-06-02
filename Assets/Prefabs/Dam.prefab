@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4275043086456691411}
   - component: {fileID: 6846554934014969650}
   - component: {fileID: 175096503451154635}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Dam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.25, z: -11.38}
-  m_LocalScale: {x: 9.953277, y: 0.20769194, z: 4.55}
+  m_LocalScale: {x: 100.702354, y: 2.62, z: 8.1354}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
