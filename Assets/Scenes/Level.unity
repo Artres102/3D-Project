@@ -2219,6 +2219,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: df557787020643941bd34f9b737e44fa, type: 2}
+    - target: {fileID: 1359180837012786958, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2430797699768704027, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: bb5d5a990ff9e46498eba86223acfff0, type: 3}
     - target: {fileID: 3203598248322085986, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
       propertyPath: m_TagString
       value: Interaction Canvas
@@ -2247,6 +2255,14 @@ PrefabInstance:
       propertyPath: attachedCamera
       value: 
       objectReference: {fileID: 2012821861}
+    - target: {fileID: 8222100528644561772, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: bb5d5a990ff9e46498eba86223acfff0, type: 3}
+    - target: {fileID: 8538973025885169463, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8649645953415748618, guid: 7550654e8ebd2874ba59e8525cb7e2b1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -326.08
@@ -3156,6 +3172,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7213877554415783225, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213877554415783225, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8082386836624143430, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
       propertyPath: m_Text
       value: 'Level: 0
@@ -3195,7 +3219,9 @@ PrefabInstance:
         0 Rock'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4240373080567216060, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
+    - {fileID: 7213877554415783225, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7a77bb7daeece94ea54be5117803c2f, type: 3}
@@ -4702,6 +4728,7 @@ MonoBehaviour:
   damUI: {fileID: 0}
   interactionCanvas: {fileID: 0}
   inventoryUI: {fileID: 0}
+  damUpgradedUI: {fileID: 0}
 --- !u!4 &624446263
 Transform:
   m_ObjectHideFlags: 0
