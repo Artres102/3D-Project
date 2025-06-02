@@ -590,6 +590,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalSlider: {fileID: 1903438706}
   verticalSlider: {fileID: 1027940266}
+  defaultHorizontal: 100
+  defaultVertical: 50
+  minHorizontal: 50
+  maxHorizontal: 500
+  minVertical: 25
+  maxVertical: 250
 --- !u!1 &207512632
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,7 +2768,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 847548955}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: QuitConfirm
+        m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
