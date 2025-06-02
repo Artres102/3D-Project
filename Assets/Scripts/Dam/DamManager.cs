@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class DamManager : MonoBehaviour
+public class DamManager : MonoBehaviour, IInteractable
 {
     // private List<Item> itemsInDam = new List<Item>();
 
@@ -15,6 +15,9 @@ public class DamManager : MonoBehaviour
     [SerializeField] private int[] currentUpgrade;
     private int damLevel = 0;
     private Text damUpgradeUI;
+    private GameObject interactionText;
+    private GameObject depositedText;
+    private GameObject damGrownUI;
     
     private InventoryScript inventoryScript;
     
@@ -29,35 +32,33 @@ public class DamManager : MonoBehaviour
         inventoryScript = gameManager.player.GetComponent<InventoryScript>();
         playerItems = inventoryScript.items;
 
+        interactionText = GameManager.Instance.interactionCanvas.transform.GetChild(0).gameObject;
+        depositedText = GameManager.Instance.interactionCanvas.transform.GetChild(2).gameObject;
+        damGrownUI = GameManager.Instance.interactionCanvas.transform.GetChild(3).gameObject;
+        
         damUpgradeUI = gameManager.damUI.GetComponent<Text>();
         currentUpgrade = GenerateUpgrade();
         
         DisplayCurrentUpgrade();
     }
 
-    // Update is called once per frame
-    void Update()
+    public bool Interact(Interactor interactor)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            // Debug.Log(itemsInDam.Count + " Items in Dam");
-            for (int i = 0; i < itemsCounter.Length; i++)
-            {
-                Debug.Log(itemsCounter[i] + " " + i);
-            }
-            Debug.Log(inventoryScript.items.Count + " Items player has");
-            Debug.Log(inventoryScript.currentWeight + " Weight player has");
-        };
+        if (!interactor) return false;
+        
+        DepositItems();
+        
+        inventoryScript.UpdateInventoryText();
+        ChangeUI();
+        
+        CheckUpgrade();
+        
+        DisplayCurrentUpgrade();
+        return true;
     }
 
-    private void OnTriggerEnter(Collider other)
+    void DepositItems()
     {
-        Debug.Log(other.name);
-        if (!other.CompareTag("Player"))
-        {
-            return;
-        }
-
         foreach (Item item in playerItems.ToList())
         {
             Debug.Log("Depositing: " + item.itemName + " (ID: " + item.itemId + ")");
@@ -69,11 +70,12 @@ public class DamManager : MonoBehaviour
             itemsCounter[item.itemId]++;
             inventoryScript.items.Remove(item);
         }
-        
-        inventoryScript.UpdateInventoryText();
-        CheckUpgrade();
-        
-        DisplayCurrentUpgrade();
+    }
+
+    void ChangeUI()
+    {
+        interactionText.SetActive(false);
+        StartCoroutine(UITimer(depositedText));
     }
 
     void CheckUpgrade()
@@ -94,7 +96,7 @@ public class DamManager : MonoBehaviour
         float damYScale = transform.localScale.y * (damLevel + 1);
         Vector3 newScale = new Vector3(transform.localScale.x, damYScale, transform.localScale.z);
         transform.localScale = newScale;
-            
+        
         currentUpgrade = GenerateUpgrade();
         
     }
@@ -144,5 +146,12 @@ public class DamManager : MonoBehaviour
                             $"{itemsCounter[(int)ItemsEnum.Stick]}/{currentUpgrade[(int)ItemsEnum.Stick]}\n\n" +
                             $"{itemsCounter[(int)ItemsEnum.Log]}/{currentUpgrade[(int)ItemsEnum.Log]}\n\n" +
                             $"{itemsCounter[(int)ItemsEnum.Rock]}/{currentUpgrade[(int)ItemsEnum.Rock]}";
+    }
+
+    private IEnumerator UITimer(GameObject UI)
+    {
+        UI.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        UI.SetActive(false);
     }
 }

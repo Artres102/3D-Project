@@ -9,6 +9,7 @@ public class GameManager : Singleton<GameManager>
     public GameObject damUI;
     public GameObject interactionCanvas;
     public GameObject inventoryUI;
+    public GameObject damUpgradedUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +18,6 @@ public class GameManager : Singleton<GameManager>
         damUI = GameObject.FindGameObjectWithTag("DamUI");
         interactionCanvas = GameObject.FindGameObjectWithTag("Interaction Canvas");
         inventoryUI = GameObject.FindGameObjectWithTag("InventoryUI");
+        damUpgradedUI = GameObject.FindGameObjectWithTag("DamUpgradedUI");
     }
 }
