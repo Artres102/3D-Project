@@ -35,6 +35,7 @@ public class Item : MonoBehaviour, IInteractable
         interactText.SetActive(false);
         if (canAdd)
         {
+            //add partcticle
             gameObject.SetActive(false);
         }
         else

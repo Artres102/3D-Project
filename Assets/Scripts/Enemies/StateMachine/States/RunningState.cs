@@ -31,6 +31,7 @@ public class RunningState : AStateBehaviour
         destinationReached = false;
 
         // Define destination away from player
+        agent.velocity = Vector3.zero;
         Vector3 directionAwayFromPlayer = (agent.transform.position - player.position).normalized;
         Vector3 destination = agent.transform.position + directionAwayFromPlayer * runAwayDistance;
         agent.SetDestination(destination);
