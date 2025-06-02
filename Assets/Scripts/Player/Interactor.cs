@@ -6,6 +6,7 @@ public class Interactor : MonoBehaviour
 { 
     public float distance;
     [SerializeField] private GameObject interactText;
+    private IInteractable interactable;
 
     private GameManager gameManager;
     void Start()
@@ -17,7 +18,7 @@ public class Interactor : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name);
-        var interactable = other.GetComponent<IInteractable>();
+        interactable = other.GetComponent<IInteractable>();
 
         if (interactable != null)
         {
@@ -29,23 +30,24 @@ public class Interactor : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         Debug.Log(other.name + "Out");
-        var interactable = other.GetComponent<IInteractable>();
+        IInteractable otherInteractable = other.GetComponent<IInteractable>();
 
-        if (interactable != null)
+        if (otherInteractable == interactable)
         {
             interactText.SetActive(false);
+            interactable = null;
         }
         
         Debug.Log(distance);
     }
 
-    void OnTriggerStay(Collider other)
+    void Update()
     {
-        var interactable = other.GetComponent<IInteractable>();
+        //var interactable = other.GetComponent<IInteractable>();
 
-        if (interactable != null)
+        if (Input.GetKeyDown(KeyCode.E) && interactable != null)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            //if (Input.GetKeyDown(KeyCode.E))
             {
                 interactable.Interact(this);
             }
