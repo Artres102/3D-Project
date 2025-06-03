@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RegionalItemInstantiateer : MonoBehaviour
+public class RegionalItemSpawner : MonoBehaviour
 {
     [Header("Item Prefabs")]
     public GameObject leafPrefab;
@@ -65,7 +65,7 @@ public class RegionalItemInstantiateer : MonoBehaviour
             
             InstantiateLog(new Vector3(xPosition, yPosition, zPosition));
         }
-    }
+    }  
     
     private void SpawnRocks()
     {

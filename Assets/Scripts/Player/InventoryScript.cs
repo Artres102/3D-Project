@@ -11,7 +11,10 @@ public class InventoryScript : MonoBehaviour
     
     public float currentWeight = 0f;
     
-    private Text inventoryUI;
+    private Text leafAmountText;
+    private Text stickAmountText;
+    private Text logAmountText;
+    private Text rockAmountText;
     
     private GameManager gameManager;
     // Start is called before the first frame update
@@ -19,7 +22,10 @@ public class InventoryScript : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         
-        inventoryUI = gameManager.inventoryUI.GetComponent<Text>();
+        leafAmountText = gameManager.leafAmount.GetComponent<Text>();
+        stickAmountText = gameManager.stickAmount.GetComponent<Text>();
+        logAmountText = gameManager.logAmount.GetComponent<Text>();
+        rockAmountText = gameManager.rockAmount.GetComponent<Text>();
         UpdateInventoryText();
     }
     
@@ -39,6 +45,9 @@ public class InventoryScript : MonoBehaviour
                 case (int)ItemsEnum.Rock: rockCount++; break;
             }
         }
-        inventoryUI.text = $"{leafCount}\n\n{stickCount}\n\n{logCount}\n\n{rockCount}";
+        leafAmountText.text = leafCount.ToString();
+        stickAmountText.text = stickCount.ToString();
+        logAmountText.text = logCount.ToString();
+        rockAmountText.text = rockCount.ToString();
     }
 }

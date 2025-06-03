@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0}
-  m_SizeDelta: {x: 870.2256, y: 72.8931}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1447.3098, y: 72.8931}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6580614501787036765
 CanvasRenderer:
@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Your Dam has grown!
+  m_Text: 'Your Dam has grown to level 0!
 
 '
 --- !u!1 &1401246134317204119
@@ -754,7 +754,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1544.9, y: 219.3525}
+  m_SizeDelta: {x: 1544.9, y: 73.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8876404567738665857
 CanvasRenderer:

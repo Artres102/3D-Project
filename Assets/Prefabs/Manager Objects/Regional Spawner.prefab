@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 199703875483672781}
   - component: {fileID: 4927757299074316753}
   - component: {fileID: 2281375630794766204}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Regional Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -122,7 +122,7 @@ MonoBehaviour:
   stickPrefab: {fileID: 7936895961952661250, guid: 7e272a53034a3544094ef9348eae6175, type: 3}
   logPrefab: {fileID: 4037571884045030603, guid: b48179e67e30ca74bbcc323d3dbfecb1, type: 3}
   rockPrefab: {fileID: 7777024740114593336, guid: e538d5162444fe842a185e08b95ab87a, type: 3}
-  leafAmount: 3
-  stickAmount: 1
-  logAmount: 5
-  rockAmount: 3
+  leafAmount: 0
+  stickAmount: 0
+  logAmount: 0
+  rockAmount: 0

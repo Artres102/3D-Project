@@ -9,8 +9,6 @@ using Random = UnityEngine.Random;
 
 public class DamManager : MonoBehaviour, IInteractable
 {
-    // private List<Item> itemsInDam = new List<Item>();
-
     [SerializeField] private int[] itemsCounter = new int[4];
     [SerializeField] private int[] currentUpgrade;
     private int damLevel = 0;
@@ -18,17 +16,15 @@ public class DamManager : MonoBehaviour, IInteractable
     private GameObject interactionText;
     private GameObject depositedText;
     private GameObject damGrownUI;
+    private Text damGrownText;
     
     private InventoryScript inventoryScript;
-    
     private GameManager gameManager;
-
     private List<Item> playerItems;
-    // Start is called before the first frame update
+
     void Start()
     {
         gameManager = GameManager.Instance;
-        
         inventoryScript = gameManager.player.GetComponent<InventoryScript>();
         playerItems = inventoryScript.items;
 
@@ -36,9 +32,10 @@ public class DamManager : MonoBehaviour, IInteractable
         depositedText = GameManager.Instance.interactionCanvas.transform.GetChild(2).gameObject;
         damGrownUI = GameManager.Instance.interactionCanvas.transform.GetChild(3).gameObject;
         
+        damGrownText = damGrownUI.GetComponent<Text>();
+        
         damUpgradeUI = gameManager.damUI.GetComponent<Text>();
         currentUpgrade = GenerateUpgrade();
-        
         DisplayCurrentUpgrade();
     }
 
@@ -47,11 +44,10 @@ public class DamManager : MonoBehaviour, IInteractable
         if (!interactor) return false;
         
         DepositItems();
-        
         inventoryScript.UpdateInventoryText();
-        ChangeUI();
-        
-        CheckUpgrade();
+
+        bool upgraded = CheckUpgrade();
+        if (!upgraded) ChangeUI();
         
         DisplayCurrentUpgrade();
         return true;
@@ -78,29 +74,28 @@ public class DamManager : MonoBehaviour, IInteractable
         StartCoroutine(UITimer(depositedText));
     }
 
-    void CheckUpgrade()
+    bool CheckUpgrade()
     {
-        if (!CheckDoneItems())
-        {
-            return;
-        }
+        if (!CheckDoneItems()) return false;
         
-        Debug.Log("I UPGRADED");
         for (int i = 0; i < itemsCounter.Length; i++)
         {
             itemsCounter[i] -= currentUpgrade[i];
         }
 
         damLevel++;
-        
+
         float damYScale = transform.localScale.y * (damLevel + 1);
         Vector3 newScale = new Vector3(transform.localScale.x, damYScale, transform.localScale.z);
         transform.localScale = newScale;
-        
+
         currentUpgrade = GenerateUpgrade();
         
+        damGrownText.text = $"Your Dam has grown to level {damLevel}";
+        StartCoroutine(UITimer(damGrownUI));
+        return true;
     }
-    
+
     bool CheckDoneItems()
     {
         for (int i = 0; i < itemsCounter.Length; i++)
@@ -123,19 +118,14 @@ public class DamManager : MonoBehaviour, IInteractable
             requiredItems[(int)ItemsEnum.Stick] = 2;
             requiredItems[(int)ItemsEnum.Log] = 2;
             requiredItems[(int)ItemsEnum.Rock] = 1;
-            
             return requiredItems;
         }
-        int sticks = Random.Range(1, 5);
-        int logs = Random.Range(1, 5);
-        int stones = Random.Range(1, 5);
-        int leaves = Random.Range(1, 5);
 
-        requiredItems[(int)ItemsEnum.Stick] = sticks;
-        requiredItems[(int)ItemsEnum.Log] = logs;
-        requiredItems[(int)ItemsEnum.Rock] = stones;
-        requiredItems[(int)ItemsEnum.Leaf] = leaves;
-        
+        requiredItems[(int)ItemsEnum.Stick] = Random.Range(1, 5);
+        requiredItems[(int)ItemsEnum.Log] = Random.Range(1, 5);
+        requiredItems[(int)ItemsEnum.Rock] = Random.Range(1, 5);
+        requiredItems[(int)ItemsEnum.Leaf] = Random.Range(1, 5);
+
         return requiredItems;
     }
 

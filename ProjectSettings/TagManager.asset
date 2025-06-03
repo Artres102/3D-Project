@@ -17,6 +17,7 @@ TagManager:
   - Interaction Canvas
   - InventoryUI
   - Audio
+  - Hideout
   layers:
   - Default
   - TransparentFX

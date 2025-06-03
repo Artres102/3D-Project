@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Interactor : MonoBehaviour
 { 
@@ -20,10 +21,19 @@ public class Interactor : MonoBehaviour
         Debug.Log(other.name);
         interactable = other.GetComponent<IInteractable>();
 
-        if (interactable != null)
+        if (interactable == null) return;
+
+        switch (other.tag)
         {
-            Debug.Log(interactText);
-            interactText.SetActive(true);
+            case "Item":
+                ItemText();
+                break;
+            case "Hideout":
+                HideoutText();
+                break;
+            case "Dam":
+                DamText();
+                break;
         }
     }
 
@@ -41,6 +51,24 @@ public class Interactor : MonoBehaviour
         Debug.Log(distance);
     }
 
+    void ItemText()
+    {
+        interactText.GetComponent<Text>().text = "[E] to Collect";
+        interactText.SetActive(true);
+    }
+
+    void HideoutText()
+    {
+        interactText.GetComponent<Text>().text = "[E] to Hide";
+        interactText.SetActive(true);
+    }
+
+    void DamText()
+    {
+        interactText.GetComponent<Text>().text = "[E] to Deposit Items";
+        interactText.SetActive(true);
+    }
+
     void Update()
     {
         //var interactable = other.GetComponent<IInteractable>();
@@ -50,6 +78,7 @@ public class Interactor : MonoBehaviour
             //if (Input.GetKeyDown(KeyCode.E))
             {
                 interactable.Interact(this);
+                interactText.SetActive(false);
             }
         }
     }

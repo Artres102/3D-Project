@@ -14,10 +14,14 @@ public class Item : MonoBehaviour, IInteractable
     private GameObject inventoryFullText;
     private InventoryScript inventoryManager;
     
+    private ParticleSystem ps;
+    
     private GameManager gameManager;
     void Start()
     {
         gameManager = GameManager.Instance;
+        
+        ps = GetComponentInChildren<ParticleSystem>();
         
         GameObject interactionCanvas = gameManager.interactionCanvas;
         interactText = interactionCanvas.transform.GetChild(0).gameObject;
@@ -28,15 +32,11 @@ public class Item : MonoBehaviour, IInteractable
     {
         if (!interactor) return false;
 
-        Debug.Log(itemWeight + " " + itemName);
-
         bool canAdd = AddWeight(inventoryManager);
 
         interactText.SetActive(false);
         if (canAdd)
         {
-            // particle system
-            ParticleSystem ps = GetComponentInChildren<ParticleSystem>();
             if (ps != null)
             {
                 ps.transform.SetParent(null); // detach 
