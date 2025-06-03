@@ -113,7 +113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 917, y: -491}
+  m_AnchoredPosition: {x: 918.8, y: -498.9}
   m_SizeDelta: {x: 62.4598, y: 62.4598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &853560360846474173
@@ -257,7 +257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 917, y: -279.56}
+  m_AnchoredPosition: {x: 918.8, y: -288.78}
   m_SizeDelta: {x: 62.4598, y: 62.4598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7537635576626965855
@@ -547,7 +547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 917, y: -350.54022}
+  m_AnchoredPosition: {x: 918.8, y: -358.8}
   m_SizeDelta: {x: 62.4598, y: 62.4598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7175321107076765792
@@ -881,7 +881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 917, y: -413}
+  m_AnchoredPosition: {x: 918.72, y: -428.8}
   m_SizeDelta: {x: 62.4598, y: 62.4598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8753376002976266402
@@ -953,7 +953,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 878, y: -398}
+  m_AnchoredPosition: {x: 861.9, y: -394.8}
   m_SizeDelta: {x: 202.6911, y: 424.3697}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6594916137020808894
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -997,8 +997,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Level: 0
-
+  m_Text: 'Goals:
 
 
     0/0

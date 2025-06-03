@@ -131,7 +131,7 @@ public class DamManager : MonoBehaviour, IInteractable
 
     void DisplayCurrentUpgrade()
     {
-        damUpgradeUI.text = $"Level: {damLevel}\n\n\n" +
+        damUpgradeUI.text = "Goals\n\n" +
                             $"{itemsCounter[(int)ItemsEnum.Leaf]}/{currentUpgrade[(int)ItemsEnum.Leaf]}\n\n" +
                             $"{itemsCounter[(int)ItemsEnum.Stick]}/{currentUpgrade[(int)ItemsEnum.Stick]}\n\n" +
                             $"{itemsCounter[(int)ItemsEnum.Log]}/{currentUpgrade[(int)ItemsEnum.Log]}\n\n" +
