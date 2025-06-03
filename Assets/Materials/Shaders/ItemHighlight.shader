@@ -3,7 +3,7 @@ Shader"Custom/ItemHighlight"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _OutlineColor ("Outline Color", Color) = (1,1,0,1)
+        _OutlineColor ("Outline Color", Color) = (0,0,0,1)
         _OutlineThickness ("Outline Thickness", Float) = 0.02
     }
 

@@ -21,7 +21,7 @@ public class RegionalItemSpawner : MonoBehaviour
     private Collider collider;
 
     private float xPosition;
-    private float yPosition = 50f;
+    private float yPosition;
     private float zPosition;
     // Start is called before the first frame update
     void Start()
@@ -40,6 +40,7 @@ public class RegionalItemSpawner : MonoBehaviour
         {
             xPosition = Random.Range(collider.bounds.min.x, collider.bounds.max.x);
             zPosition = Random.Range(collider.bounds.min.z, collider.bounds.max.z);
+            yPosition = transform.position.y;
             
             InstantiateLeaf(new Vector3(xPosition, yPosition, zPosition));
         }

@@ -22,31 +22,6 @@ public class ItemSpawner : MonoBehaviour
     void Start()
     {
         player = GameManager.Instance.player;
-        
-        for (int i = 0; i < amount; i++)
-        {
-            SpawnLeaf(new Vector3(Random.Range(-250f, 250f), 50f, Random.Range(-250f, 250f)));
-            SpawnStick(new Vector3(Random.Range(-250f, 250f), 50f, Random.Range(-250f, 250f)));
-            SpawnLog(new Vector3(Random.Range(-250f, 250f), 50f, Random.Range(-250f, 250f)));
-            SpawnRock(new Vector3(Random.Range(-250f, 250f), 50f, Random.Range(-250f, 250f)));
-        }
-    }
-    
-    private void SpawnLeaf(Vector3 spawnPosition)
-    {
-        Instantiate(leafPrefab, spawnPosition, Quaternion.identity);
-    }
-    private void SpawnStick(Vector3 spawnPosition)
-    {
-        Instantiate(stickPrefab, spawnPosition, Quaternion.identity);
-    }
-    private void SpawnLog(Vector3 spawnPosition)
-    {
-        Instantiate(logPrefab, spawnPosition, Quaternion.identity);
-    }
-    private void SpawnRock(Vector3 spawnPosition)
-    {
-        Instantiate(rockPrefab, spawnPosition, Quaternion.identity);
     }
 
     void Cheat()
