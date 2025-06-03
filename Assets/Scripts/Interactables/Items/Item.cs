@@ -25,24 +25,31 @@ public class Item : MonoBehaviour, IInteractable
         inventoryManager = gameManager.player.GetComponent<InventoryScript>();
     }
     public bool Interact(Interactor interactor)
-    { 
+    {
         if (!interactor) return false;
-        
+
         Debug.Log(itemWeight + " " + itemName);
-        
+
         bool canAdd = AddWeight(inventoryManager);
 
         interactText.SetActive(false);
         if (canAdd)
         {
-            //add partcticle
-            gameObject.SetActive(false);
+            // particle system
+            ParticleSystem ps = GetComponentInChildren<ParticleSystem>();
+            if (ps != null)
+            {
+                ps.transform.SetParent(null); // detach 
+                ps.Play();
+            }
+
+            gameObject.SetActive(false); 
         }
         else
         {
             StartCoroutine(FullInventoryText(inventoryFullText));
         }
-        
+
         return true;
     }
 
