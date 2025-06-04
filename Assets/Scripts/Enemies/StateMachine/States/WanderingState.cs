@@ -13,6 +13,7 @@ public class WanderingState : AStateBehaviour
     private List<Node> path;
     private int pathIndex = 0;
     private Rigidbody rb;
+    
     private float switchCooldown = 1f;
 
     private EnemyCollision collision;
@@ -21,6 +22,8 @@ public class WanderingState : AStateBehaviour
     private bool isCheckingStuck = false;
     private float stuckCheckDelay = 0.3f;
     private Vector3 lastPosition;
+
+    [SerializeField] private int idleChance;
 
     public override bool InitializeState() => true;
 
@@ -34,7 +37,14 @@ public class WanderingState : AStateBehaviour
         PickRandomDestination();
     }
 
-    public override void OnStateUpdate() { }
+    public override void OnStateUpdate()
+    {
+        int chance = Random.Range(0, 100);
+        if (chance <= idleChance)
+        {
+            AssociatedStateMachine.SetState((int)EnemyState.Idle);
+        }
+    }
 
     public override void OnStateFixedUpdate()
     {
@@ -53,7 +63,6 @@ public class WanderingState : AStateBehaviour
         Vector3 dir = (target.transform.position - transform.position).normalized;
         Vector3 velocity = dir * moveSpeed * Time.deltaTime;
         rb.velocity = new Vector3(velocity.x, rb.velocity.y, velocity.z);
-        if (gameObject.name == "otter 4") Debug.Log(velocity);
         
         if (dir != Vector3.zero)
         {
@@ -70,11 +79,9 @@ public class WanderingState : AStateBehaviour
     public override int StateTransitionCondition()
     {
         int findPlayerTarget = fov.FindPlayerTarget();
-        if (findPlayerTarget != (int)EnemyState.Invalid)
-            return findPlayerTarget;
-
-        if (collision.attacking)
-            return (int)EnemyState.Attacking;
+        
+        if (findPlayerTarget != (int)EnemyState.Invalid) return findPlayerTarget;
+        if (collision.attacking) return (int)EnemyState.Attacking;
 
         return (int)EnemyState.Invalid;
     }

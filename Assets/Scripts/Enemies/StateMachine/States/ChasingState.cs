@@ -61,20 +61,12 @@ public class ChasingState : AStateBehaviour
 
     public override int StateTransitionCondition()
     {
-        if (collision.attacking)
-        {
-            return (int)EnemyState.Attacking;
-        }
+        if (collision.attacking) return (int)EnemyState.Attacking;
+        
         int findPlayerTarget = fov.FindPlayerTarget();
-        if (findPlayerTarget != (int)EnemyState.Invalid)
-        {
-            return findPlayerTarget;
-        }
-
-        if (standUp.standingUp)
-        {
-            return (int)EnemyState.Running;
-        }
+        
+        if (findPlayerTarget != (int)EnemyState.Invalid) return findPlayerTarget;
+        if (standUp.standingUp) return (int)EnemyState.Running;
 
         return (int)EnemyState.Invalid;
     }

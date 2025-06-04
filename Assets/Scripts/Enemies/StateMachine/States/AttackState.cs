@@ -21,18 +21,9 @@ public class AttackState : AStateBehaviour
         StartCoroutine(WaitAndLoadScene(1f));
     }
 
-    public override void OnStateUpdate()
-    {
-        
-    }
-    public override void OnStateFixedUpdate()
-    {
-      
-    }
-    public override void OnStateEnd()
-    {
-        
-    }
+    public override void OnStateUpdate() { }
+    public override void OnStateFixedUpdate() { }
+    public override void OnStateEnd() { }
 
     public override int StateTransitionCondition()
     { 

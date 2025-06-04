@@ -4,8 +4,9 @@ using UnityEngine;
 public class IdleState : AStateBehaviour
 {
     private EnemyFoV fov;
+    private EnemyCollision collision;
 
-    [SerializeField] private float idleDuration = 2f;
+    [SerializeField] private float idleDuration = 5f;
     private float idleTimer = 0f;
 
     // private EnemyFoV fov;
@@ -21,6 +22,8 @@ public class IdleState : AStateBehaviour
         Debug.Log("IDLE");
         
         if (!fov) fov = GetComponent<EnemyFoV>();
+        if (!collision) collision = GetComponent<EnemyCollision>();
+        
     }
 
     public override void OnStateUpdate()
@@ -32,21 +35,17 @@ public class IdleState : AStateBehaviour
         }
     }
 
-    public override void OnStateFixedUpdate()
-    {
-        
-    }
+    public override void OnStateFixedUpdate() { }
 
-    public override void OnStateEnd()
-    {
-    }
+    public override void OnStateEnd() { }
 
     public override int StateTransitionCondition()
     {
-        if (fov.FindPlayerTarget() != (int)EnemyState.Invalid)
-        {
-            return fov.FindPlayerTarget(); 
-        }
+        int findPlayerTarget = fov.FindPlayerTarget();
+        
+        if (findPlayerTarget != (int)EnemyState.Invalid) return findPlayerTarget;
+        if (collision.attacking) return (int)EnemyState.Attacking;
+
         return (int)EnemyState.Invalid;
     }
 }
