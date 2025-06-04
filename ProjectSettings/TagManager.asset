@@ -18,11 +18,12 @@ TagManager:
   - InventoryUI
   - Audio
   - Hideout
+  - terrain
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Terrain
   - Water
   - UI
   - 
