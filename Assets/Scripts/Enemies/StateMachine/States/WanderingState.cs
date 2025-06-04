@@ -8,7 +8,7 @@ public class WanderingState : AStateBehaviour
 {
     public WPManager wpManager;
     public GameObject currentWaypoint;
-    public float moveSpeed = 2f;
+    public float moveSpeed;
 
     private List<Node> path;
     private int pathIndex = 0;
@@ -53,7 +53,8 @@ public class WanderingState : AStateBehaviour
         Vector3 dir = (target.transform.position - transform.position).normalized;
         Vector3 velocity = dir * moveSpeed * Time.deltaTime;
         rb.velocity = new Vector3(velocity.x, rb.velocity.y, velocity.z);
-
+        if (gameObject.name == "otter 4") Debug.Log(velocity);
+        
         if (dir != Vector3.zero)
         {
             float angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
