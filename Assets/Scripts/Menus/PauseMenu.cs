@@ -20,8 +20,8 @@ public class PauseMenu :MonoBehaviour
         {
             menuActivated = !menuActivated;
             PauseMenuu.SetActive(menuActivated);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            if (menuActivated == true) Cursor.lockState = CursorLockMode.None; else Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = !Cursor.visible;
         }
 
         //freeze
@@ -39,7 +39,7 @@ public class PauseMenu :MonoBehaviour
     {
         menuActivated = !menuActivated;
         PauseMenuu.SetActive(menuActivated);
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
     
