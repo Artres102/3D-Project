@@ -22,6 +22,8 @@ public class DamManager : MonoBehaviour, IInteractable
     private GameManager gameManager;
     private List<Item> playerItems;
 
+    public GameObject[] damModels = new GameObject[3];
+
     void Start()
     {
         gameManager = GameManager.Instance;
@@ -37,6 +39,11 @@ public class DamManager : MonoBehaviour, IInteractable
         damUpgradeUI = gameManager.damUI.GetComponent<Text>();
         currentUpgrade = GenerateUpgrade();
         DisplayCurrentUpgrade();
+        
+        for (int i = 0; i < damModels.Length + 1; i++)
+        {
+            damModels[i] = transform.parent.GetChild(i+1).gameObject;
+        }
     }
 
     public bool Interact(Interactor interactor)
@@ -84,6 +91,12 @@ public class DamManager : MonoBehaviour, IInteractable
         }
 
         damLevel++;
+
+        if (damLevel > 0)
+        {
+            damModels[damLevel - 1].SetActive(true);
+            damModels[damLevel - 2].SetActive(false);
+        }
 
         float damYScale = transform.localScale.y * (damLevel + 1);
         Vector3 newScale = new Vector3(transform.localScale.x, damYScale, transform.localScale.z);
