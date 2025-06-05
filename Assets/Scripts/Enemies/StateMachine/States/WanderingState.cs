@@ -34,7 +34,7 @@ public class WanderingState : AStateBehaviour
         if (!rb) rb = GetComponent<Rigidbody>();
         if (!collision) collision = GetComponent<EnemyCollision>();
         
-        if (gameObject.CompareTag("Capybara")) GetComponent<Animator>().SetBool("Chasing", false);
+        if (gameObject.CompareTag("Capybara") || gameObject.CompareTag("Wolf")) GetComponent<Animator>().SetBool("Chasing", false);
 
         PickRandomDestination();
     }
