@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField] private Transform attachedCamera;
 
+    private Animator animator;
     private float horizontalInput;
     private float verticalInput;
     private Vector3 moveDirection;
@@ -18,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -50,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (movementDirection.magnitude > 0.1f) 
         {
+            animator.SetBool("Walking", true);
             rb.velocity = new Vector3(movementDirection.x * movementSpeed, rb.velocity.y, movementDirection.z * movementSpeed);
         
             // Calculate the target rotation and the current rotation to keep the player on its side
@@ -64,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             rb.velocity = new Vector3(0, rb.velocity.y, 0);
+            animator.SetBool("Walking", false);
         }
     }
 
