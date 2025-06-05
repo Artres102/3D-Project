@@ -23,7 +23,7 @@ public class ChasingState : AStateBehaviour
         gameManager = GameManager.Instance;
         Debug.Log("CHASING");
         
-        gameObject.GetComponent<AudioSource> ().Play ();
+        gameObject.GetComponent<AudioSource>().Play ();
 
         if (!player) player = gameManager.player.transform;
         if (!fov) fov = GetComponent<EnemyFoV>();

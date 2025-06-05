@@ -14,11 +14,6 @@ public class ItemSpawner : MonoBehaviour
 
     private GameObject player;
 
-    private float xPosition;
-    private float yPosition;
-    private float zPosition;
-    private int amount = 15;
-
     void Start()
     {
         player = GameManager.Instance.player;
