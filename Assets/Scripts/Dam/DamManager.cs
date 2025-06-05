@@ -91,6 +91,7 @@ public class DamManager : MonoBehaviour, IInteractable
         }
 
         damLevel++;
+        inventoryScript.maxWeight += 2;
 
         if (damLevel > 0)
         {
