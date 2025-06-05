@@ -24,6 +24,8 @@ public class WanderingState : AStateBehaviour
     private Vector3 lastPosition;
 
     [SerializeField] private int idleChance;
+    private float idleCheckInterval = 5f; // seconds between checking the %
+    private float idleCheckTimer = 0f;    
 
     public override bool InitializeState() => true;
 
@@ -41,10 +43,17 @@ public class WanderingState : AStateBehaviour
 
     public override void OnStateUpdate()
     {
-        int chance = Random.Range(0, 100);
-        if (chance <= idleChance)
+        idleCheckTimer -= Time.deltaTime;
+
+        if (idleCheckTimer <= 0f)
         {
-            AssociatedStateMachine.SetState((int)EnemyState.Idle);
+            idleCheckTimer = idleCheckInterval;
+
+            int chance = Random.Range(1, 100); 
+            if (chance <= idleChance)
+            {
+                AssociatedStateMachine.SetState((int)EnemyState.Idle);
+            }
         }
     }
 
@@ -53,7 +62,7 @@ public class WanderingState : AStateBehaviour
         if (path == null || pathIndex >= path.Count) return;
 
         GameObject target = path[pathIndex].GetID();
-        if (Vector3.Distance(transform.position, target.transform.position) < 0.3f)
+        if (Vector3.Distance(transform.position, target.transform.position) < 1f)
         {
             pathIndex++;
             if (pathIndex >= path.Count)
@@ -124,8 +133,8 @@ public class WanderingState : AStateBehaviour
     private void CheckIfStuckAndRepath()
     {
         float moved = Vector3.Distance(transform.position, lastPosition);
-
-        if (moved < 0.3f) // barely moving
+        
+        if (moved < 2f) // barely moving
         {
             PickRandomDestination();
         }
