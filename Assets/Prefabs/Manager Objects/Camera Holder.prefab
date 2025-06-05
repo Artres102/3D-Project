@@ -76,10 +76,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb914e7682c8e8c428306b52a369e408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 0
+  horizontalSensitivity: 0
+  verticalSensitivity: 0
+  verticalFramingOffset: 1.5
   cameraPositionTransform: {fileID: 0}
   collideAgainst:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 25
   minimumDistanceFromTarget: 0.1
   cameraRadius: 0.3

@@ -548,8 +548,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 941655b6cc0f47a5a231312cc07ef8e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fov: 30
-  viewDistance: 10
+  fov: 45
+  viewDistance: 40
   aggressionFactor: 1
   aggressionRange: 25
   aggressionLimit: 50

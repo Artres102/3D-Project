@@ -522,7 +522,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1853.656, y: 219.3525}
+  m_SizeDelta: {x: 1853.656, y: 72.4051}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5020534443442442506
 CanvasRenderer:
@@ -565,7 +565,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You can't carry more stuff!
+  m_Text: You can't carry this!
 --- !u!1 &5801925571332080201
 GameObject:
   m_ObjectHideFlags: 0

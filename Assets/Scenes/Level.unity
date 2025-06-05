@@ -918,7 +918,7 @@ GameObject:
   - component: {fileID: 201895616}
   - component: {fileID: 201895615}
   - component: {fileID: 201895614}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: East Side Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1386,7 +1386,7 @@ GameObject:
   - component: {fileID: 256788357}
   - component: {fileID: 256788356}
   - component: {fileID: 256788355}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: South Side Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13331,7 +13331,7 @@ GameObject:
   - component: {fileID: 1231228707}
   - component: {fileID: 1231228706}
   - component: {fileID: 1231228705}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: North Side Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19801,7 +19801,7 @@ GameObject:
   - component: {fileID: 1932436692}
   - component: {fileID: 1932436691}
   - component: {fileID: 1932436690}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: West Side Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
