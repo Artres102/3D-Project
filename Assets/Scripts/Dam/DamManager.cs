@@ -84,7 +84,7 @@ public class DamManager : MonoBehaviour, IInteractable
     bool CheckUpgrade()
     {
         if (!CheckDoneItems()) return false;
-        
+    
         for (int i = 0; i < itemsCounter.Length; i++)
         {
             itemsCounter[i] -= currentUpgrade[i];
@@ -93,22 +93,24 @@ public class DamManager : MonoBehaviour, IInteractable
         damLevel++;
         inventoryScript.maxWeight += 2;
 
-        if (damLevel > 0)
+        switch (damLevel)
         {
-            damModels[damLevel - 1].SetActive(true);
-            damModels[damLevel - 2].SetActive(false);
-        }
-
-        float damYScale = transform.localScale.y * (damLevel + 1);
-        Vector3 newScale = new Vector3(transform.localScale.x, damYScale, transform.localScale.z);
-        transform.localScale = newScale;
+            case 1:
+                damModels[damLevel].SetActive(true);
+                break;
+            case > 1:
+                damModels[damLevel - 1].SetActive(true);
+                damModels[damLevel - 2].SetActive(false);
+                break;
+        } 
 
         currentUpgrade = GenerateUpgrade();
-        
+
         damGrownText.text = $"Your Dam has grown to level {damLevel}";
         StartCoroutine(UITimer(damGrownUI));
         return true;
     }
+
 
     bool CheckDoneItems()
     {

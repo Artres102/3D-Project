@@ -53,7 +53,7 @@ public class WanderingState : AStateBehaviour
         if (path == null || pathIndex >= path.Count) return;
 
         GameObject target = path[pathIndex].GetID();
-        if (Vector3.Distance(transform.position, target.transform.position) < 1f)
+        if (Vector3.Distance(transform.position, target.transform.position) < 0.3f)
         {
             pathIndex++;
             if (pathIndex >= path.Count)
@@ -125,7 +125,7 @@ public class WanderingState : AStateBehaviour
     {
         float moved = Vector3.Distance(transform.position, lastPosition);
 
-        if (moved < 1f) // barely moving
+        if (moved < 0.3f) // barely moving
         {
             PickRandomDestination();
         }
