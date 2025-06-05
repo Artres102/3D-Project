@@ -33,6 +33,8 @@ public class WanderingState : AStateBehaviour
         if (!fov) fov = GetComponent<EnemyFoV>();
         if (!rb) rb = GetComponent<Rigidbody>();
         if (!collision) collision = GetComponent<EnemyCollision>();
+        
+        if (gameObject.CompareTag("Capybara")) GetComponent<Animator>().SetBool("Chasing", false);
 
         PickRandomDestination();
     }

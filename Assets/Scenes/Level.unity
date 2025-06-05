@@ -990,71 +990,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 674076336}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -243.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 33.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -205.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 2037049413}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 674076336}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -243.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 33.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -205.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &204377359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6505642757305954524, guid: 3484ca82280542641b0b758d7cb832f0, type: 3}
@@ -2008,91 +2004,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1503346405}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 1264534856}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: currentWaypoint
       value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 1264534856}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+      objectReference: {fileID: 1233567424}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_Name
-      value: Capybara
+      value: Capybara Model
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.96437734
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.48701054
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.092024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 1264534856}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -193
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.596828
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.z
       value: -9.582368
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 1264534856}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: currentWaypoint
-      value: 
-      objectReference: {fileID: 1433109877}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!1001 &292077563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2771,91 +2743,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 937929346}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: currentWaypoint
       value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+      objectReference: {fileID: 1645011558}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_Name
-      value: Capybara (3)
+      value: Capybara Model (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.96437734
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.48701054
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.092024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 937929346}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.5968279
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.z
       value: -24.9
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: currentWaypoint
-      value: 
-      objectReference: {fileID: 643369611}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!1001 &369510397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3978,74 +3926,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 765605143}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 133
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 19.047
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -187.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 933453744}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 765605143}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 133
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.047
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -187.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &512320281 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 512320280}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &517772621
@@ -4898,7 +4842,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &539569014 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 353608310}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &544178471
@@ -5096,71 +5040,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 674076336}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -156.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 28.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -209.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1458913866}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 674076336}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -156.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 28.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -209.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!1001 &562592601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6642,74 +6582,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 765605143}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 100.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 28.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -251.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1128095594}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 765605143}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 100.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 28.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &660041651 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 660041650}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &664531869
@@ -7017,91 +6953,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 937929346}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: currentWaypoint
       value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+      objectReference: {fileID: 1232643435}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_Name
-      value: Capybara (2)
+      value: Capybara Model (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.96437734
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.48701054
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.092024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 937929346}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -57
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.5968279
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.z
       value: -24.9
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: currentWaypoint
-      value: 
-      objectReference: {fileID: 1986173963}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &727474866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6505642757305954524, guid: 3484ca82280542641b0b758d7cb832f0, type: 3}
@@ -7208,74 +7120,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 765605143}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 64.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -227.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1575650997}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 765605143}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 64.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -227.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &731221904 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 731221903}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &731648926
@@ -7398,7 +7306,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &748482148 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 281209365}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &750864679
@@ -8330,74 +8238,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 674076336}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -240
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 50.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -304
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 2054756725}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 674076336}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -240
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -304
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &794017178 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 1871318186}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &797168970 stripped
@@ -8413,71 +8317,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 674076336}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -247.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 23.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -170.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1699955847}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 674076336}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -247.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 23.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -170.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!1001 &800571680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8849,7 +8749,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &861496640 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 1574820122}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &865232840
@@ -10031,74 +9931,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 765605143}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 105.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 21.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -215.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1146313077}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 765605143}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 105.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -215.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &999295988 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 999295987}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1001155170
@@ -10629,91 +10525,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 937929346}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: currentWaypoint
       value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+      objectReference: {fileID: 643369611}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_Name
-      value: Capybara (5)
+      value: Capybara Model (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.96437734
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.48701054
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.092024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 937929346}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.5968279
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.z
       value: -13.3
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: currentWaypoint
-      value: 
-      objectReference: {fileID: 664531869}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!1 &1050182688
 GameObject:
   m_ObjectHideFlags: 0
@@ -10765,7 +10637,7 @@ MonoBehaviour:
   embedOffset: 0.5
 --- !u!4 &1061225410 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 1314041374}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1071360799
@@ -13416,7 +13288,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!4 &1240763826 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 203310870}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1247538009 stripped
@@ -14874,91 +14746,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 937929346}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: currentWaypoint
       value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+      objectReference: {fileID: 1986173963}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_Name
-      value: Capybara (4)
+      value: Capybara Model (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.96437734
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.48701054
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.092024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 937929346}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.5968279
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.z
       value: -24.9
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: currentWaypoint
-      value: 
-      objectReference: {fileID: 1232643435}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &1320873751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6390397156658817291, guid: 4cc18bd5d4c4f8045ad52af7d014055a, type: 3}
@@ -15703,74 +15551,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 765605143}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 42.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -286.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 207029540}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 765605143}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 42.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -286.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &1367511240 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 1367511239}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1371253948
@@ -17029,7 +16873,7 @@ MonoBehaviour:
   embedOffset: 0.5
 --- !u!4 &1524656173 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 2082658514}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1525862210
@@ -17339,7 +17183,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1565332005 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 561913218}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1574820122
@@ -17350,71 +17194,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 674076336}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -280.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 24.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -173.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 99680816}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 674076336}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -280.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -173.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!1 &1575650997
 GameObject:
   m_ObjectHideFlags: 0
@@ -17634,7 +17474,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1654682352 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 797681476}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1659101558
@@ -17737,7 +17577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1662534617 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 790553698}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1664206978
@@ -18914,74 +18754,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 765605143}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 134.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 35.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -250.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 765605143}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1763758224}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 765605143}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 134.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 35.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -250.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &1859399227 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 1859399226}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1871318186
@@ -18992,91 +18828,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 937929346}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.96437734
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.48701054
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.092024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -121.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5968279
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -31
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1710867656}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 937929346}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -121.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5968279
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!1001 &1879236608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20505,7 +20317,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: -186.427, z: 0}
 --- !u!4 &2008403584 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 1035825489}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2012821858
@@ -21109,7 +20921,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!4 &2072559774 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 2117018476}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2078052384
@@ -21218,94 +21030,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 937929346}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: Player
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: currentWaypoint
       value: 
-      objectReference: {fileID: 1247538009}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+      objectReference: {fileID: 664531869}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_Name
-      value: Capybara (1)
+      value: Capybara Model
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.96437734
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.48701054
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.092024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 937929346}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -90.6
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.5968279
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalPosition.z
       value: -9.582367
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 937929346}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: currentWaypoint
-      value: 
-      objectReference: {fileID: 1645011558}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!4 &2091029184 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
   m_PrefabInstance: {fileID: 717423394}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2109201890 stripped
@@ -21405,71 +21193,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1080124587}
     m_Modifications:
-    - target: {fileID: 2381852432703760176, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: wpManager
       value: 
       objectReference: {fileID: 674076336}
-    - target: {fileID: 3935860467071041913, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 3938770322948891030, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_Name
-      value: Capybara (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -259.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 40.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -215.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070793678433482901, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
-      propertyPath: wpManager
-      value: 
-      objectReference: {fileID: 674076336}
-    - target: {fileID: 7131264583327280614, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+    - target: {fileID: 603315047557392420, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1035370939}
+    - target: {fileID: 1944703392079092973, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_Name
+      value: Capybara Model (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801850541534930783, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: wpManager
+      value: 
+      objectReference: {fileID: 674076336}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -259.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 40.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -215.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771152628559093570, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2d4f430c2443584fb254171accd6e0f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 12d71a7986e13024ca15e0157ad0c1bb, type: 3}
 --- !u!1 &2120238489
 GameObject:
   m_ObjectHideFlags: 0

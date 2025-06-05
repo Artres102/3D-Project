@@ -30,6 +30,8 @@ public class ChasingState : AStateBehaviour
         if (!agent) agent = GetComponent<NavMeshAgent>(); ;
         if (!standUp) standUp = player.GetComponent<StandUp>();
         if (!collision) collision = GetComponent<EnemyCollision>();
+        
+        if (gameObject.CompareTag("Capybara")) GetComponent<Animator>().SetBool("Chasing", true);
 
         if (agent != null)
         {
