@@ -29,9 +29,9 @@ public class InteractableHideout : MonoBehaviour, IInteractable
 
         // Get movement and renderer components
         PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
-        MeshRenderer playerRenderer = player.GetComponentInChildren<MeshRenderer>();
+        GameObject playerModel = player.transform.GetChild(1).gameObject;
 
-        if (playerMovement == null || playerRenderer == null)
+        if (playerMovement == null || playerModel == null)
         {
             Debug.LogError("Missing PlayerMovement or MeshRenderer.");
             return false;
@@ -42,7 +42,7 @@ public class InteractableHideout : MonoBehaviour, IInteractable
 
         // Enable/disable movement and visibility
         playerMovement.enabled = !isInsideHideout;
-        playerRenderer.enabled = !isInsideHideout;
+        playerModel.SetActive(!isInsideHideout);
 
         // Change layer to ignore raycast while hidden
         if (isInsideHideout)
