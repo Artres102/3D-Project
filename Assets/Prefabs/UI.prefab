@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 7537635576626965855}
   - component: {fileID: 399935149891118083}
   m_Layer: 5
-  m_Name: Stick Icon
+  m_Name: Leaf Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -403,8 +403,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5584038080725561330}
   - {fileID: 4712302471047215710}
+  - {fileID: 5584038080725561330}
   - {fileID: 8194445682693252390}
   - {fileID: 8095444998536918099}
   - {fileID: 4303663451675521058}
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 7175321107076765792}
   - component: {fileID: 8504144528405262953}
   m_Layer: 5
-  m_Name: Leaf Icon
+  m_Name: Stick Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

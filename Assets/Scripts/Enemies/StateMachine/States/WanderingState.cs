@@ -134,7 +134,7 @@ public class WanderingState : AStateBehaviour
     {
         float moved = Vector3.Distance(transform.position, lastPosition);
         
-        if (moved < 2f) // barely moving
+        if (moved < 1f) // barely moving
         {
             PickRandomDestination();
         }
