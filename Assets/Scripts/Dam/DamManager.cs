@@ -96,7 +96,7 @@ public class DamManager : MonoBehaviour, IInteractable
         switch (damLevel)
         {
             case 1:
-                damModels[damLevel].SetActive(true);
+                damModels[damLevel - 1].SetActive(true);
                 break;
             case > 1:
                 damModels[damLevel - 1].SetActive(true);
